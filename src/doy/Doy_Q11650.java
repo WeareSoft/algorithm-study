@@ -49,3 +49,11 @@ public class Doy_Q11650 {
         }
     }
 }
+
+
+/*
+    오호. 저는 Point 클래스를 그대로 사용했는데 아예 커스텀으로 Point 클래스를 만든게 다르네요.
+    근데 compareTo(Point p) 내용은 똑같아보입니다~
+    그리고 List<Point> pointList = new ArrayList<>();와 ArrayList<Point> pointList = new ArrayList<>();가 
+    어떤 경우에 사용되는지의 차이를 찾아서 다음에 공유하면 좋을 거 같아요 :)
+*/
