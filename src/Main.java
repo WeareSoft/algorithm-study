@@ -7,8 +7,12 @@ public class Main {
 //        Doy_Q1000.run();
 //        Hee_Q1000.run();
 
+//        Doy_Q2751.run();
 //        Hee_Q2751.run();
 
-        Doy_Q10814.run();
+//        Doy_Q11650.run();
+      
+          Doy_Q10814.run();
+
     }
 }
