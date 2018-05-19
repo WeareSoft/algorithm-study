@@ -35,3 +35,12 @@ public class Doy_Q10989 {
         bw.close();
     }
 }
+
+/*
+    1. Scanner 대신에 BufferedReader, BufferedWriter를 사용해야 하는 이유
+    2. BufferedReader/BufferedWriter, InputStreamReader/OutputStreamWriter의 차이점
+    3. StringBuilder와 String + 를 사용했을 때의 차이점(Hee풀이에 관련 내용있음)
+    4. bw.flush()의 용도
+    5. counting sort란 무엇인가
+    등에 대해서 조사하고 공유하면 좋을 거 같아요 :)
+*/
