@@ -49,3 +49,7 @@ public class Hee_Q11650 {
     }
 }
 
+/*
+처음에 Point 클래스를 이용하려 했는데 compare 함수를 작성하려면 Point 클래스를 만들어야 되는 생각밖에 못했네요 :(
+comparator 클래스를 만들어 정렬 방식을 지정하는 sort 방법에 대해 알아갑니다~
+*/
