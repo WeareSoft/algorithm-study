@@ -43,7 +43,13 @@
 
 * [#issue1] Java 언어를 이용하여 정렬할 때 시간초과 문제
     * [https://www.acmicpc.net/problem/10989](https://www.acmicpc.net/problem/10989)
+    * Scanner 대신에 BufferedReader, BufferedWriter를 사용해야 하는 이유
 * [#issue2] List와 ArrayList의 차이
 * [#issue3] Arrays.sort()와 Collections.sort()의 차이
+* [#issue4] BufferedReader/BufferedWriter, InputStreamReader/OutputStreamWriter의 차이
+    * bw.flush()의 용도
+* [#issue5] StringBuilder와 (String + String) 를 사용했을 때의 차이
+* [#issue6] counting sort(계수정렬)의 개념 및 시간복잡도
+
 
 ## 2018.05.27
