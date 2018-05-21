@@ -5,6 +5,9 @@
     * Java
 * IDE
     * IntelliJ
+* Algorithm Site
+    * Baekjoon Online Judge: [https://www.acmicpc.net/](https://www.acmicpc.net/])
+    
 
 ## Study Rule
 * Github를 통한 코드 공유 및 피드백
@@ -14,7 +17,7 @@
         * 각자가 해당 범위에 대한 알고리즘 이론 내용을 간단히 정리한다.
     * 문제 풀이
         * 각자가 해당 범위에 대한 알고리즘 문제를 푼다.
-        * 문제를 풀 때 발생한 issue는 Readme에 기록한다.
+        * 문제를 풀 때 발생한 **[issue]** Readme에 기록한다.
             * issue: 추가로 공부하고 싶은 개념, 어려웠던 부분, 오류가 난 부분 등
             * 해당하는 문제에 대한 링크도 첨부한다.
     * 공유 및 피드백
@@ -28,9 +31,8 @@
 * 스터디 모임에서 할 일
     * 이론 정리 공유
     * 문제 풀이 피드백 확인
-        * 문제를 풀 때 발생한 issue에 대해 논의한다.
+        * 문제를 풀 때 발생한 **[issue]** 에 대해 논의하여 Readme에 정리한다.
     * 좋은 코드에 대한 분석 공유
-
 
 ---
 
@@ -40,16 +42,15 @@
     * [https://www.acmicpc.net/problem/1000](https://www.acmicpc.net/problem/1000)
 
 ## 2018.05.20
-
+### 정렬
+:heavy_check_mark: [issue 정리 내용](/contents/180520.md)
 * [#issue1] Java 언어를 이용하여 정렬할 때 시간초과 문제
-    * [https://www.acmicpc.net/problem/10989](https://www.acmicpc.net/problem/10989)
-    * Scanner 대신에 BufferedReader, BufferedWriter를 사용해야 하는 이유
 * [#issue2] List와 ArrayList의 차이
+* [#issue2-1] 업캐스팅, 다운캐스팅이란
 * [#issue3] Arrays.sort()와 Collections.sort()의 차이
 * [#issue4] BufferedReader/BufferedWriter, InputStreamReader/OutputStreamWriter의 차이
-    * bw.flush()의 용도
-* [#issue5] StringBuilder와 (String + String) 를 사용했을 때의 차이
+* [#issue5] String, StringBuilder, StringBuffer의 차이
 * [#issue6] counting sort(계수정렬)의 개념 및 시간복잡도
-
+   
 
 ## 2018.05.27
