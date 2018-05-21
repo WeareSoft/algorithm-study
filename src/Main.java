@@ -11,7 +11,7 @@ public class Main {
 //        Hee_Q2751.run();
       
 //        Doy_Q10825.run();
-          Hee_Q10825.run();
+//        Hee_Q10825.run();
 
 //        Doy_Q11650.run();
 //        Hee_Q11650.run();
@@ -19,6 +19,6 @@ public class Main {
 //        Doy_Q10989.run();
       
 //        Doy_Q10814.run();
-
+          Hee_Q10814.run();
     }
 }
