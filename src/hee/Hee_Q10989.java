@@ -78,3 +78,8 @@ public class Hee_Q10989 {
 
     }
 }
+
+/*
+scanner가 편하지만 BufferedReader를 쓰는 이유,
+새로운 정렬방식인 counting sort에 대해 알아갑니다 :)
+*/
