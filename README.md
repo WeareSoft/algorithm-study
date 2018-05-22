@@ -6,18 +6,18 @@
 * IDE
     * IntelliJ
 * Algorithm Site
-    * Baekjoon Online Judge: [https://www.acmicpc.net/](https://www.acmicpc.net/])
+    * Baekjoon Online Judge: [https://www.acmicpc.net/](https://www.acmicpc.net/)
     
 
 ## Study Rule
 * Github를 통한 코드 공유 및 피드백
-    * feature branch workflow 방식을 이용한다
+    * [Feature Branch Workflow](https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html) 방식을 이용한다
 * 개인이 할 일
     * 이론 정리
         * 각자가 해당 범위에 대한 알고리즘 이론 내용을 간단히 정리한다.
     * 문제 풀이
         * 각자가 해당 범위에 대한 알고리즘 문제를 푼다.
-        * 문제를 풀 때 발생한 **[issue]** Readme에 기록한다.
+        * 문제를 풀 때 발생한 **[issue]** 를 Readme에 기록한다.
             * issue: 추가로 공부하고 싶은 개념, 어려웠던 부분, 오류가 난 부분 등
             * 해당하는 문제에 대한 링크도 첨부한다.
     * 공유 및 피드백
