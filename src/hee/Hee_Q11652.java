@@ -10,10 +10,16 @@ public class Hee_Q11652 {
 
     public static void run() {
         int count = scanner.nextInt();
+        ArrayList<Long> arrayLists = new ArrayList<>();
         LinkedHashMap<Long , Integer> hashMaps = new LinkedHashMap<>();
 
         for (int i=0; i<count; i++){
-            long key = scanner.nextLong();
+            arrayLists.add(scanner.nextLong());
+        }
+        Collections.sort(arrayLists);
+
+        for (int i=0; i<count; i++){
+            long key = arrayLists.get(i);
 
             //해당하는 값이 hashmap에 있으면 count 증가
             if(hashMaps.containsKey(key)){
