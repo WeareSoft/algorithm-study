@@ -44,4 +44,7 @@ public class Hee_Q11652 {
     }
 }
 
-
+/*
+    map의 key정렬을 찾아보니 기본으로 key 오름차순 정렬을 지원하는 TreeMap이라는 것이 있네요 :)
+    HashMap, LinkedHashMap, TreeMap.. 등 map 특징도 정리해보면 좋을 거 같아요~ㅎㅎㅎ
+*/
