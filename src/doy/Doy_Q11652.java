@@ -40,3 +40,10 @@ public class Doy_Q11652 {
         System.out.println(res);
     }
 }
+
+/*
+    BigInteger 자료형은 처음 봤네요 :)
+    저는 순서 있는 Hashmap LinkedHashmap을 이용해서 풀었는데 제 코드가 좀 더 복잡해보긴하네요.
+    다음에 같이 시간복잡도 계산을 해서 어떤게 더 성능이 좋은지 비교해보면 좋을 거 같아요~
+    제 코드는 메모리: 59636 KB, 걸린 시간: 1072 MS입니다.
+*/
