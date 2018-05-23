@@ -24,3 +24,7 @@ public class Hee_Q11004 {
 }
 
 
+/*
+    Scanner, BefferedReader
+    Arrays.sort, Collections.sort 의 속도, 공간차이에 대해 다시 한번 정리해보면 좋겠네요 :)
+*/
