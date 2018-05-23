@@ -24,6 +24,7 @@ public class Main {
 //        Doy_Q11652.run();
 //        Hee_Q11652.run();
 
-        Doy_Q11004.run();
+//        Doy_Q11004.run();
+        Hee_Q11004.run();
     }
 }
