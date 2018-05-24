@@ -53,6 +53,8 @@
 * [#issue6] counting sort(계수정렬)의 개념 및 시간복잡도
 * [#issue7] HashMap, LinkedHashMap, TreeMap의 차이
 * [#issue8] java 자료형의 범위 (ex, Integer, BigInteger, Long..)
+* [#issue9] StringTokenizer 개념 및 사용법
+* [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간, 공간복잡도 분석
    
 
 ## 2018.05.27
