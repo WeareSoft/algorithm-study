@@ -28,8 +28,10 @@ public class Main {
 //        Hee_Q11004.run();
       
 //        Doy_Q10430.run();
-        Hee_Q10430.run();
+//        Hee_Q10430.run();
 
 //        Hee_Q2609.run();
+        Hee_Q1934.run();
+
     }
 }
