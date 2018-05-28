@@ -30,9 +30,9 @@ public class Main {
 //        Doy_Q10430.run();
 //        Hee_Q10430.run();
 
-        Doy_Q2609.run();
-//        Hee_Q2609.run();
+//        Doy_Q2609.run();
+        Hee_Q2609.run();
 
-        Doy_Q1934.run();
+//        Doy_Q1934.run();
     }
 }
