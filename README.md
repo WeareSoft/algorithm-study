@@ -51,8 +51,9 @@
 * [#issue4] BufferedReader/BufferedWriter, InputStreamReader/OutputStreamWriter의 차이
 * [#issue5] String, StringBuilder, StringBuffer의 차이
 * [#issue6] counting sort(계수정렬)의 개념 및 시간복잡도
-* [#issue7] HashMap, LinkedHashMap, TreeMap의 차이
-* [#issue8] java 자료형의 범위 (ex, Integer, BigInteger, Long..)
+* [#issue7] java Map 인터페이스 구현체의 종류
+* [#issue7-1] Java Collections Framework
+* [#issue8] java 자료형의 범위 (ex. Integer, Long, BigInteger, BigDecimal)
 * [#issue9] StringTokenizer 개념 및 사용법
 * [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간, 공간복잡도 분석
    
@@ -60,8 +61,8 @@
 ## 2018.05.27
 ### 수학1-1(나머지, 최대공약수, 최소공배수, GCD의 합, 진법)
 :heavy_check_mark: [issue 정리 내용](/contents/180527.md)
-* [#issue1]
-
+* [#issue1] 최대공약수(GCD)를 구하는 방법 '유클리드 호제법'의 개념
+* [#issue1-1] 최대공약수를 이용하여 최소공배수(LCM)를 구하는 방법 
 
 ## 2018.06.03
 ### 수학1-2()
