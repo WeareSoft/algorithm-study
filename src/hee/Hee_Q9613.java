@@ -6,7 +6,7 @@ import java.util.*;
 public class Hee_Q9613 {
     static Scanner scanner = new Scanner(System.in);
 
-    public static int gcd(int num1, int num2){
+    public static long gcd(long num1, long num2){
         if(num2 == 0){
             return num1;
         }else {
@@ -19,14 +19,14 @@ public class Hee_Q9613 {
 
         for(int i=0; i<testcase; i++){
             int count = scanner.nextInt();
-            Integer[] nums = new Integer[count];
+            Long[] nums = new Long[count];
 
             for (int j=0; j<count; j++){
-                nums[j] = scanner.nextInt();
+                nums[j] = scanner.nextLong();
             }
 
-            int num1, num2 = 0;
-            int sumGCD = 0;
+            long num1, num2 = 0;
+            long sumGCD = 0;
 
             for(int j=0; j<nums.length-1; j++){
                 num1 = nums[j];
