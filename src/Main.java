@@ -36,7 +36,7 @@ public class Main {
 //        Doy_Q1934.run();
 //        Hee_Q1934.run();
 
-        Doy_Q9613.run();
-
+//        Doy_Q9613.run();
+        Hee_Q9613.run();
     }
 }
