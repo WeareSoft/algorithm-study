@@ -54,3 +54,10 @@ public class Doy_Q1850 {
 }
 
 // reference : http://ksj14.tistory.com/entry/BackJoon1850-%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98
+
+/*
+    같은 자료를 참고했네요.
+    풀이도 거의 동일합니다.
+    (표준 입출력 + StringBuffer 이용)해도 시간 초과가 안걸리는 것을 풀이를 보고 알았어요 :)
+    다음에는 자료형의 범위를 정확히 조사하고, 어떤 조건의 입력값이 있을 때 long이나 int를 쓰는지 확실히 알고 가면 좋을 거 같아요~
+*/
