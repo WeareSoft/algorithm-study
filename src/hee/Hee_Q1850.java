@@ -43,3 +43,9 @@ public class Hee_Q1850 {
         bufferedWriter.close();
     }
 }
+
+
+/*
+    풀이가 같네요 :)
+    저번에도 말했듯이 자료형 공부와 정리가 필요한 것 같습니당 ㅎㅎ
+*/
