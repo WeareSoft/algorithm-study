@@ -24,3 +24,9 @@ public class Doy_Q11005 {
         System.out.println(sb.reverse());
     }
 }
+
+/*
+    StringBuilder 함수에 reverse()라는 좋은 것이 있었네요^^
+    풀이가 훨씬 간단해지는거 같아요ㅎㅎ 
+    'A'의 아스키코드 = 65는 기본적으로 알아두는 것이 좋을 거 같아요.
+*/
