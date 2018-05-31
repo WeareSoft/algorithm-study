@@ -54,6 +54,7 @@
 * [#issue7] java Map 인터페이스 구현체의 종류
 * [#issue7-1] Java Collections Framework
 * [#issue8] java 자료형의 범위 (ex. Integer, Long, BigInteger, BigDecimal)
+* [#issue8-1] 입력값 조건에 따른 java 자료형 선택 방법
 * [#issue9] StringTokenizer 개념 및 사용법
 * [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간, 공간복잡도 분석
    
