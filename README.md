@@ -57,7 +57,7 @@
 * [#issue8-1] 입력값 조건에 따른 java 자료형 선택 방법
 * [#issue9] 문자열 분리를 위한 StringTokenizer와 String.spilt의 차이
 * [#issue9-1] 문자열 분리를 위한 StringTokenizer와 String.spilt의 사용 예제
-* [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간, 공간복잡도 분석
+* [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간복잡도 분석
    
 
 ## 2018.05.27
