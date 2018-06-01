@@ -36,3 +36,9 @@ public class Hee_Q11005 {
 
     }
 }
+
+/*
+    값을 출력할 때 StringBuffer나 StringBuilder의 reverse를 이용하면 더 간편할거 같아요 :)
+    그리고 이렇게 일일이 나누는 방법 말고 Java API를 이용하는 방법도 있더라구요 (http://donggov.tistory.com/48)
+    이 방법도 한번 정리해보면 좋겠네요 ㅎㅎㅎ
+*/
