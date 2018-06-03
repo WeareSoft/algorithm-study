@@ -55,8 +55,9 @@
 * [#issue7-1] Java Collections Framework
 * [#issue8] java 자료형의 범위 (ex. Integer, Long, BigInteger, BigDecimal)
 * [#issue8-1] 입력값 조건에 따른 java 자료형 선택 방법
-* [#issue9] StringTokenizer 개념 및 사용법
-* [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간, 공간복잡도 분석
+* [#issue9] 문자열 분리를 위한 StringTokenizer와 String.spilt의 차이
+* [#issue9-1] 문자열 분리를 위한 StringTokenizer와 String.spilt의 사용 예제
+* [#issue10] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간복잡도 분석
    
 
 ## 2018.05.27
@@ -64,6 +65,8 @@
 :heavy_check_mark: [issue 정리 내용](/contents/180527.md)
 * [#issue1] 최대공약수(GCD)를 구하는 방법 '유클리드 호제법'의 개념
 * [#issue1-1] 최대공약수를 이용하여 최소공배수(LCM)를 구하는 방법 
+* [#issue2] 기본적인 아스키코드
+* [#issue3] 10진수 <-> 2진수, 8진수, 16진수 변환 시 Integer API 사용
 
 ## 2018.06.03
 ### 수학1-2()
