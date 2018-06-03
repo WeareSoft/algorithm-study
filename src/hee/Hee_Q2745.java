@@ -30,7 +30,7 @@ public class Hee_Q2745 {
             Character num = stringBuilder.charAt(i);
 
             // 0*(proposition^0), 3*(proposition^1)
-            result += charToCode(num) + Math.pow(proposition, i);
+            result += charToCode(num) * Math.pow(proposition, i);
         }
 
         // 값 출력
@@ -40,3 +40,10 @@ public class Hee_Q2745 {
 
 // reference: http://mytalkhome.tistory.com/422
 // https://stackoverflow.com/questions/46343616/how-can-i-convert-a-char-to-int-in-java/46343671
+
+/*
+    result에 값을 더할 때 왜... 
+    주석은 // 0*(proposition^0), 3*(proposition^1) 이렇게 작성하고 ㅎㅎ
+    result += charToCode(num) + <-???????? Math.pow(proposition, i);
+    당신은 바보입니다
+*/
