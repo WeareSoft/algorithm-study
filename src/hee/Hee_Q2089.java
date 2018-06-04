@@ -32,3 +32,8 @@ public class Hee_Q2089 {
         System.out.print(stringBuilder.reverse());
     }
 }
+
+/*
+    평소에 생각해보지 못했던 -진수에 대해서 알아갑니다~
+    해당 진수로 나누어 지지 않는 음수의 값 고려!!
+*/
