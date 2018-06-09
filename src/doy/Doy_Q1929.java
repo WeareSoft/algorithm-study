@@ -29,3 +29,10 @@ public class Doy_Q1929 {
         }
     }
 }
+
+/*
+    둘 다 '에라토스테네스의 체'를 이용한 풀이로, 동일하네요.
+    그리고 Boolean(Object)의 기본값은 null이고 boolean(primitive)의 기본값은 false라는 것도 새로 알게 되었어요.^^
+    issue1) i가 1,000,000 인 경우 i*i는 범위를 넘어가므로 j=i*i -> j=i*2
+    issue2) 주어진 조건의 범위를 제대로 확인하고 값은 초기화해야 된다는 것도 알았어요.
+*/
