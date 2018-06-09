@@ -15,6 +15,8 @@ public class Hee_Q1929 {
         for (int i=0; i<=n; i++){
             checkPrime.add(i, true); // true이면 소수이다
         }
+        
+        checkPrime.set(1, false);
 
         // 에라토스테네스의 체
         for (int i=2; i<=n; i++){
@@ -79,3 +81,6 @@ public class Hee_Q1929 {
 
 }
 
+/*
+    (1≤M≤N≤1,000,000) 범위는 최소와 최대 둘 다 명심합시다!!! ㅎㅎㅎㅎ
+*/
