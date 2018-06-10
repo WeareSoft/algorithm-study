@@ -1,6 +1,5 @@
 package hee.math1_2;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
