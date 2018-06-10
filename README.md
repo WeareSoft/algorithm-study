@@ -60,7 +60,6 @@
 * [#issue10] 문자열 분리를 위한 StringTokenizer와 String.spilt의 차이
 * [#issue10-1] 문자열 분리를 위한 StringTokenizer와 String.spilt의 사용 예제
 * [#issue11] BufferedReader/Scanner, Arrays.sort()/Collections.sort()에 따른 시간복잡도 분석
-   
 
 ## 2018.05.27
 ### 수학1-1(나머지, 최대공약수, 최소공배수, GCD의 합, 진법)
