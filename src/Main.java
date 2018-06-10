@@ -1,5 +1,4 @@
-import doy.*;
-import hee.*;
+import hee.math1_2.Hee_Q6588;
 
 public class Main {
     public static void main(String[] args) throws Exception{
