@@ -13,7 +13,7 @@ public class Doy_Q1676 {
 
         // n을 소인수분해 했을 때 2*5의 개수가 0의 개수
         // 팩토리얼에서는 5의 개수가 항상 2의 개수보다 적기 때문에 5의 개수로만 판단
-        while (n > divideNum) {
+        while (n >= divideNum) {
             count += n / divideNum;
             divideNum *= 5;
         }
