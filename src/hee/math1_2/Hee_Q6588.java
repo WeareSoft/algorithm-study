@@ -1,6 +1,5 @@
 package hee.math1_2;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -75,3 +74,7 @@ public class Hee_Q6588 {
         }
     }
 }
+
+/*
+    반복문을 도는 횟수도 항상 생각하고 문제를 풀어야 겠네요 :)
+*/
