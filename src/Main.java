@@ -1,7 +1,5 @@
-import doy.math1_2.Doy_Q1676;
-import doy.math1_2.Doy_Q1929;
-import doy.math1_2.Doy_Q6588;
-import hee.math1_2.Hee_Q6588;
+import doy.math1_2.*;
+import hee.math1_2.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -62,6 +60,7 @@ public class Main {
 //        Doy_Q6588.run();
 //        Hee_Q6588.run();
 
-        Doy_Q1676.run();
+//        Doy_Q1676.run();
+        Hee_Q1676.run();
     }
 }
