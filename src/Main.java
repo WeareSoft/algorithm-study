@@ -1,3 +1,4 @@
+import doy.math1_2.Doy_Q1676;
 import doy.math1_2.Doy_Q1929;
 import doy.math1_2.Doy_Q6588;
 import hee.math1_2.Hee_Q6588;
@@ -58,7 +59,9 @@ public class Main {
 //        Doy_Q11653.run();
 //        Hee_Q11653.run();
 
+//        Doy_Q6588.run();
 //        Hee_Q6588.run();
-        Doy_Q6588.run();
+
+        Doy_Q1676.run();
     }
 }
