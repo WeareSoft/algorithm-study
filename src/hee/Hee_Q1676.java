@@ -24,3 +24,8 @@ public class Hee_Q1676 {
         System.out.print(result);
     }
 }
+
+/*
+풀이가 동일하네요 :)
+반복문은 두 번 돌지만 제 코드보다 가독성은 더 좋아보이네요 ㅎㅎㅎ
+*/
