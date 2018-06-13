@@ -55,3 +55,7 @@ public class Hee_Q1629 {
 //        System.out.print(mul2(a, b, c));
     }
 }
+
+/*
+    a^b를 구하는 방법 중 시간 복잡도가 낮은 분할정복, 이진수의 원리에 대해 알아갑니다 ㅎㅎ
+*/
