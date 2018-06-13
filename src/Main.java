@@ -2,7 +2,6 @@ import doy.math1_2.*;
 import hee.math1_2.*;
 import hee.math2_1.*;
 
-
 public class Main {
     public static void main(String[] args) throws Exception{
 //        Doy_Q1000.run();
@@ -59,6 +58,12 @@ public class Main {
 //        Doy_Q11653.run();
 //        Hee_Q11653.run();
 
+//        Doy_Q6588.run();
+//        Hee_Q6588.run();
+
+//        Doy_Q1676.run();
+//        Hee_Q1676.run();
+      
         Hee_Q1629.run();
     }
 }
