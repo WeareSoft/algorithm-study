@@ -1,4 +1,5 @@
 import doy.math1_2.*;
+import doy.math2_1.Doy_Q1629;
 import hee.math1_2.*;
 
 public class Main {
@@ -61,6 +62,8 @@ public class Main {
 //        Hee_Q6588.run();
 
 //        Doy_Q1676.run();
-        Hee_Q1676.run();
+//        Hee_Q1676.run();
+
+        Doy_Q1629.run();
     }
 }
