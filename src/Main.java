@@ -1,6 +1,7 @@
 import doy.math1_2.*;
-import doy.math2_1.Doy_Q1629;
+import doy.math2_1.*;
 import hee.math1_2.*;
+import hee.math2_1.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -64,6 +65,8 @@ public class Main {
 //        Doy_Q1676.run();
 //        Hee_Q1676.run();
 
-        Doy_Q1629.run();
+        Doy_Q1629.run();      
+//        Hee_Q1629.run();
+
     }
 }
