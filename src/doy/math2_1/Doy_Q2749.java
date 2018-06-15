@@ -22,3 +22,8 @@ public class Doy_Q2749 {
         System.out.println(fibo[index]);
     }
 }
+
+/*
+    풀이가 동일하네요.
+    다음 스터디에서는 피사노의 주기를 구하는 방법에 대해서 함께 얘기해보면 좋을 거 같아요^^
+*/
