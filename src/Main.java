@@ -73,8 +73,10 @@ public class Main {
 
 //        Doy_Q2749.run();
 //        Hee_Q2749.run();
-      
+
 //        Hee_Q1788.run();
-        Doy_Q1788.run();
+//        Doy_Q1788.run();
+      
+        Hee_Q9471.run();
     }
 }
