@@ -1,6 +1,6 @@
 import doy.math1_2.*;
 import doy.math2_1.*;
-import doy.math2_2.Doy_Q10422;
+import doy.math2_2.*;
 import hee.math1_2.*;
 import hee.math2_1.*;
 
@@ -82,5 +82,7 @@ public class Main {
 //        Hee_Q9471.run();
 
         Doy_Q10422.run();
+      
+//        Doy_Q11689.run();
     }
 }
