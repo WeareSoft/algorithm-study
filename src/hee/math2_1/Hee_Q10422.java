@@ -88,3 +88,8 @@ public class Hee_Q10422{
 
 // Reference : http://suhak.tistory.com/77
 // Reference : https://www.geeksforgeeks.org/program-nth-catalan-number/
+
+/*
+    저한테는 카탈란의 수는 개념 이해 자체가 어렵네요 ㅠㅠ
+    이번 스터디에서 정확한 이해를 하고 넘어가는걸 목표로 해야겠어요 ㅎㅎ
+*/
