@@ -3,6 +3,7 @@ import doy.math2_1.*;
 import doy.math2_2.*;
 import hee.math1_2.*;
 import hee.math2_1.*;
+import hee.math2_2.Hee_Q10974;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -81,11 +82,12 @@ public class Main {
 //        Doy_Q9471.run();
 //        Hee_Q9471.run();
 
-        Hee_Q10422.run();
+//        Hee_Q10422.run();
 //        Doy_Q10422.run();
       
 //        Doy_Q11689.run();
 //        Hee_Q11689.run();
 
+        Hee_Q10974.run();
     }
 }
