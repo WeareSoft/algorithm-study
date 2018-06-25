@@ -3,6 +3,7 @@ import doy.math2_1.*;
 import doy.math2_2.*;
 import hee.math1_2.*;
 import hee.math2_1.*;
+import hee.math2_2.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -87,6 +88,7 @@ public class Main {
 //        Doy_Q11689.run();
 //        Hee_Q11689.run();
 
-        Doy_Q10972.run();
+//        Doy_Q10972.run();
+        Hee_Q10972.run();
     }
 }
