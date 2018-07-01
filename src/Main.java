@@ -1,3 +1,4 @@
+import doy.ds1.*;
 import doy.math1_2.*;
 import doy.math2_1.*;
 import doy.math2_2.*;
@@ -93,6 +94,7 @@ public class Main {
 //        Hee_Q10972.run();
 
 //        Hee_Q10828.run();
+//        Doy_Q10828.run();
       
         Hee_Q9012.run();
     }
