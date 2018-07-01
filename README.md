@@ -100,6 +100,8 @@
 * [#issue1] 스택(Stack)의 개념과 관련 메서드
 * [#issue2] 큐(Queue)의 개념과 관련 메서드
 * [#issue3] 덱(Deque, Double-ended Queue)의 개념과 관련 메서드
+* [#issue4] String indexOf()의 사용법
+* [#issue5] String substring()의 사용법
 
 ## 2018.07.01
 ### 자료구조2(스택, Disjoint-set, 비트마스크, 힙, 이진 검색 트리)
