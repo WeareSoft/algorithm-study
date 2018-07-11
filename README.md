@@ -109,7 +109,8 @@
 ## 2018.07.01
 ### 자료구조2(스택, Disjoint-set, 비트마스크, 힙, 이진 검색 트리)
 :heavy_check_mark: [issue 정리 내용](/contents/180701.md)
-* [#issue1] 
+* [#issue1] Disjoint-set(서로소 집합 자료구조)의 개념과 사용 예제
+* [#issue1-1] Disjoint-set 구현 방법
 
 
 ## 2018.07.08
