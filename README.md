@@ -111,7 +111,8 @@
 :heavy_check_mark: [issue 정리 내용](/contents/180701.md)
 * [#issue1] Disjoint-set(서로소 집합 자료구조)의 개념과 사용 예제
 * [#issue1-1] Disjoint-set 구현 방법
-
+* [#issue2] 비트마스크의 개념과 사용 이유
+* [#issue2-1] 비트연산의 종류와 사용법
 
 ## 2018.07.08
 ### 트리와 이분탐색
