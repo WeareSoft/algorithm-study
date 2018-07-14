@@ -24,17 +24,17 @@ public class Hee_Q7785 {
         }
 
         /* TreeSet 이용 시 내림차순 정렬 */
-//        Iterator itr = redBlackTree.descendingSet().iterator(); // 내림차순 정렬
-//        while (itr.hasNext()){
-//            System.out.println(itr.next());
-//        }
-
-        /* HashSet 이용 시 내림차순 정렬 */
-        String res[] = hashTable.toArray(new String[hashTable.size()]);
-        Arrays.sort(res);
-        for (int i=res.length-1; i>=0; i--) {
-            System.out.println(res[i]);
+        Iterator itr = redBlackTree.descendingSet().iterator(); // 내림차순 정렬
+        while (itr.hasNext()){
+            System.out.println(itr.next());
         }
+
+        /* HashSet 이용 시 정렬 */
+//        String res[] = hashTable.toArray(new String[hashTable.size()]);
+//        Arrays.sort(res); // 오름차순 정렬
+//        for (int i=res.length-1; i>=0; i--) { // 내림차순 출력
+//            System.out.println(res[i]);
+//        }
     }
 }
 
