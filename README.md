@@ -83,10 +83,42 @@
 * [#issue3] 행렬의 곱 구하기
 * [#issue4] 피사노 주기의 개념과 구하는 방법
 * [#issue5] 음수 번째의 피보나치의 수에 대한 규칙성
+* [#issue6] 이항계수 구하는 방법
 
 ## 2018.06.17
 ### 수학2-2(카탈란 수, 오일러 피 함수, 유클리드 알고리즘, 나머지 연산, 순열)
 :heavy_check_mark: [issue 정리 내용](/contents/180617.md)
 * [#issue1] 카탈란 수의 개념과 적용 사례
 * [#issue1-1] 카탈란 수 구하는 방법
-* [#issue2] 오일러 피 함수의 개념과 구하는 방법
+* [#issue2] 오일러 피 함수의 개념과 활용
+* [#issue2-1] 오일러 피 함수 구하는 방법
+* [#issue3] 사전순으로 다음에 오는 순열
+
+## 2018.06.24
+### 자료구조1(스택, 큐, 덱, 문자열)
+:heavy_check_mark: [issue 정리 내용](/contents/180624.md)
+* [#issue1] 스택(Stack)의 개념
+* [#issue1-1] 스택(Stack) 관련 메서드
+* [#issue2] 큐(Queue)의 개념
+* [#issue2-1] 큐(Queue) 관련 메서드
+* [#issue3] 덱(Deque, Double-ended Queue)의 개념
+* [#issue3-1] 덱(Deque, Double-ended Queue) 관련 메서드
+* [#issue4] String indexOf()의 사용법
+* [#issue5] String substring()의 사용법
+
+## 2018.07.01
+### 자료구조2(스택, Disjoint-set, 비트마스크, 힙, 이진 검색 트리)
+:heavy_check_mark: [issue 정리 내용](/contents/180701.md)
+* [#issue1] Disjoint-set(서로소 집합 자료구조)의 개념과 사용 예제
+* [#issue1-1] Disjoint-set 구현 방법
+* [#issue2] 비트마스크의 개념과 사용 이유
+* [#issue2-1] 비트연산의 종류와 사용법
+* [#issue3] 이진 트리의 개념과 종류
+* [#issue3-1] 이진 트리와 관련된 용어들
+* [#issue4] 최대힙의 삽입과 삭제
+* [#issue5] 이진 검색 트리의 개념 
+
+## 2018.07.08
+### 트리와 이분탐색
+:heavy_check_mark: [issue 정리 내용](/contents/180708.md)
+* [#issue1] 
