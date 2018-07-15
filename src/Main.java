@@ -102,6 +102,8 @@ public class Main {
 
 //        Doy_Q10799.run();
 
+        Hee_Q7785.run();
+      
         Hee_Q1764.run();
     }
 }
