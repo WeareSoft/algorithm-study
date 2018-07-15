@@ -98,9 +98,23 @@ public class Main {
 //        Doy_Q10828.run();
       
 //        Hee_Q9012.run();
+//        Doy_Q9012.run();
 
 //        Doy_Q10799.run();
 
+        Hee_Q11723.run();
+
+        Hee_Q1927.run();
+
+        Hee_Q7785.run();
+      
+        Hee_Q1764.run();
+
+//        Doy_Q10799.run();
+
+        Hee_Q11279.run();
+
         Hee_Q1717.run();
+
     }
 }
