@@ -91,6 +91,7 @@ public class Main {
 //        Doy_Q11689.run();
 //        Hee_Q11689.run();
 
+        Hee_Q10974.run();
         Hee_Q1722.run();
 //        Doy_Q10972.run();
 //        Hee_Q10972.run();
@@ -130,6 +131,5 @@ public class Main {
         Hee_Q1717.run();
 
         Hee_Q4195.run();
-
     }
 }
