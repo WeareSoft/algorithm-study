@@ -1,4 +1,4 @@
-package hee;
+package hee.math1_2;
 
 import java.util.Scanner;
 
