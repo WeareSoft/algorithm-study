@@ -56,3 +56,8 @@ public class Doy_Q1991 {
         System.out.println();
     }
 }
+
+/*
+    풀이가 동일하네요 :)
+    트리의 개념에 대해 같이 정리해보면 좋을 거 같아요.
+*/
