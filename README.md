@@ -118,13 +118,24 @@
 * [#issue4] 최대힙의 삽입과 삭제
 * [#issue5] 이진 검색 트리의 개념 
 
+
 ## 2018.07.08
 ### 트리와 이분탐색
 :heavy_check_mark: [issue 정리 내용](/contents/180708.md)
-* [#issue1] 
+* [#issue1] 트리의 개념과 적용 사례
+* [#issue1-1] 트리와 그래프의 차이점
+* [#issue2] 이분탐색의 개념
 
 
 ## 2018.07.15
 ### 그래프1(그래프, DFS, BFS, 이분그래프, 사이클, 플러드 필)
 :heavy_check_mark: [issue 정리 내용](/contents/180715.md)
+* [#issue1] 그래프의 개념과 적용 사례
+* [#issue2] 트리나 그래프를 방문 또는 탐색하는 방법 1: BFS(너비 우선 탐색) 
+* [#issue3] 트리나 그래프를 방문 또는 탐색하는 방법 2: DFS(깊이 우선 탐색)
+
+
+## 2018.07.22
+### 그래프2(DAG(Directed Acyclic Graph), 위상 정렬, MST(Minimum Spanning Tree), Prim, 최단 경로, 벨만포드(Bellman-Ford), 다익스트라(Dijkstra), 플로이드(Floyd-Warshall), SPFA(Shortest Path Faster))
+:heavy_check_mark: [issue 정리 내용](/contents/180722.md)
 * [#issue1] 
