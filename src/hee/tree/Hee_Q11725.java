@@ -1,4 +1,4 @@
-package hee.datastructure2;
+package hee.tree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class Hee_Q11725 {
 
             for(int item : list.get(parent)) {
                 if(parents[item] == 0) {
-                    parents[item] = parent;
+                    parents[item] = parent; // 부모 노드를 저장한다.
                     queue.offer(item);
                 }
             }
@@ -32,10 +32,10 @@ public class Hee_Q11725 {
 
         // 인접 리스트
         ArrayList< ArrayList<Integer> > list = new ArrayList<>();
-        int[] parents = new int[N+1];
+        int[] parents = new int[N+1]; // 0으로 초기화 (부모 노드를 저장할 배열)
 
         // 각 정점의 간선으로 연결되어있는 정점들에 대한 정보를 담을 리스트를 초기화
-        for(int i=0; i<=N+1; i++) {
+        for(int i=0; i<=N; i++) {
             list.add(new ArrayList<Integer>());
         }
 
