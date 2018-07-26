@@ -53,8 +53,10 @@
 * [#issue5] BufferedReader/BufferedWriter, InputStreamReader/OutputStreamWriter의 차이
 * [#issue6] String, StringBuilder, StringBuffer의 차이
 * [#issue7] counting sort(계수정렬)의 개념 및 시간복잡도
-* [#issue8] java Map 인터페이스 구현체의 종류
-* [#issue8-1] Java Collections Framework
+* [#issue8] Java Collections Framework
+* [#issue8-1] java Map 인터페이스 구현체의 종류
+* [#issue8-2] java Set 인터페이스 구현체의 종류
+* [#issue8-3] java List 인터페이스 구현체의 종류
 * [#issue9] java 자료형의 범위 (ex. Integer, Long, BigInteger, BigDecimal)
 * [#issue9-1] 입력값 조건에 따른 java 자료형 선택 방법
 * [#issue10] 문자열 분리를 위한 StringTokenizer와 String.spilt의 차이
