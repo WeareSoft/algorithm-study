@@ -109,7 +109,7 @@
 * [#issue5] String substring()의 사용법
 
 ## 2018.07.01
-### 자료구조2(스택, Disjoint-set, 비트마스크, 힙, 이진 검색 트리)
+### 자료구조2(스택, Disjoint-set, 비트마스크, 힙, 이진 탐색 트리)
 :heavy_check_mark: [issue 정리 내용](/contents/180701.md)
 * [#issue1] Disjoint-set(서로소 집합 자료구조)의 개념과 사용 예제
 * [#issue1-1] Disjoint-set 구현 방법
@@ -118,15 +118,15 @@
 * [#issue3] 이진 트리의 개념과 종류
 * [#issue3-1] 이진 트리와 관련된 용어들
 * [#issue4] 최대힙의 삽입과 삭제
-* [#issue5] 이진 검색 트리의 개념 
+* [#issue5] 이진 탐색 트리의 개념 
 
 
 ## 2018.07.08
-### 트리와 이분탐색
+### 트리와 이진 탐색
 :heavy_check_mark: [issue 정리 내용](/contents/180708.md)
 * [#issue1] 트리의 개념과 적용 사례
 * [#issue1-1] 트리와 그래프의 차이점
-* [#issue2] 이분탐색의 개념
+* [#issue2] 이진 탐색의 개념
 
 
 ## 2018.07.15
