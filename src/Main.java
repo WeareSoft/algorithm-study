@@ -8,6 +8,7 @@ import hee.datastructure2.*;
 import hee.math1_2.*;
 import hee.math2_1.*;
 import hee.math2_2.*;
+import hee.tree.Hee_Q1167;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -127,7 +128,8 @@ public class Main {
 //        Hee_Q1717.run();
 //        Hee_Q4195.run();
 
-        Doy_Q1991.run();
+//        Doy_Q1991.run();
 
+        Hee_Q1167.run();
     }
 }
