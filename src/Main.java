@@ -2,6 +2,7 @@ import doy.ds1.*;
 import doy.math1_2.*;
 import doy.math2_1.*;
 import doy.math2_2.*;
+import doy.tree.Doy_Q1991;
 import hee.datastructure1.*;
 import hee.datastructure2.*;
 import hee.math1_2.*;
@@ -93,7 +94,7 @@ public class Main {
 
 //        Doy_Q10972.run();
 //        Hee_Q10972.run();
-
+      
 //        Hee_Q10828.run();
 //        Doy_Q10828.run();
       
@@ -101,7 +102,32 @@ public class Main {
 //        Doy_Q9012.run();
 
 //        Doy_Q10799.run();
+//        Hee_Q10799.run();
+      
+//        Hee_Q2004.run();
+//        Hee_Q2086.run();     
+//        Hee_Q10974.run();
+//        Hee_Q1722.run();
+//        Hee_Q10845.run();
+//        Hee_Q10866.run();
+//        Hee_Q10828.run();
+//        Hee_Q10808.run();
+//        Hee_Q10820.run();
+//        Hee_Q10809.run();
+//        Hee_Q2743.run();
+//        Hee_Q11655.run();
+//        Hee_Q10824.run();
+//        Hee_Q11656.run();
+//        Hee_Q3015.run();
+//        Hee_Q11723.run();
+//        Hee_Q1927.run();
+//        Hee_Q7785.run();
+//        Hee_Q1764.run();
+//        Hee_Q11279.run();
+//        Hee_Q1717.run();
+//        Hee_Q4195.run();
 
+//        Doy_Q1991.run();
         Hee_Q1991.run();
     }
 }
