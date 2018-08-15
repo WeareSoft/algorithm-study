@@ -1,4 +1,4 @@
-package hee.datastructure2;
+package hee.tree;
 
 import java.util.Scanner;
 
