@@ -137,13 +137,20 @@
 * [#issue1] 그래프의 개념과 적용 사례
 * [#issue2] 트리나 그래프를 방문 또는 탐색하는 방법 1: BFS(너비 우선 탐색) 
 * [#issue3] 트리나 그래프를 방문 또는 탐색하는 방법 2: DFS(깊이 우선 탐색)
-
+* [#issue4] 이분그래프의 개념
+* [#issue5] 사이클의 개념과 사이클을 찾는 방법
+* [#issue6] 플러드 필(Flood Fill) 알고리즘의 개념
 
 ## 2018.08.26
-### 그래프2(DAG(Directed Acyclic Graph), 위상 정렬, MST(Minimum Spanning Tree), Prim, 최단 경로, 벨만포드(Bellman-Ford))
+### 그래프2(DAG(Directed Acyclic Graph), 위상 정렬, 최소 비용 신장 트리(Minimum Spanning Tree), Prim, Kruskal, 최단 경로(Shortest Path), Bellman-Ford)
 :heavy_check_mark: [issue 정리 내용](/contents/180826.md)
-* [#issue1] 
-
+* [#issue1] 방향성이 있는 비순환 그래프(DAG, Directed Acyclic Graph)의 개념
+* [#issue2] 위상 정렬
+* [#issue3] 최소 비용 신장 트리(MST, Minimum Spanning Tree)
+* [#issue3-1] Prim MST 알고리즘
+* [#issue3-2] Kruskal MST 알고리즘
+* [#issue4] 최단 경로(Shortest Path)
+* [#issue4-1] Bellman-Ford 알고리즘
 
 ## 2018.09.02
 ### 그래프2(다익스트라(Dijkstra), 플로이드(Floyd-Warshall), SPFA(Shortest Path Faster))
