@@ -1,11 +1,4 @@
-알고리즘 스터디 내용 정리
-        - 이진 탐색 정리
-        - 최대힙 개념 정리
-        - 이전 알고리즘 내용 정리
-
-        블로그 작성
-        - 추상클래스와 인터페이스
-        package hee.graph1;
+package hee.graph1;
 
 import java.util.LinkedList;
 import java.util.Queue;
