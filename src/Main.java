@@ -135,6 +135,8 @@ public class Main {
 
 //        Hee_Q1654.run();
 
-        Hee_Q1707.run();
+//        Hee_Q1707.run();
+
+        Hee_Q2252.run();
     }
 }
