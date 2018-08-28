@@ -145,8 +145,8 @@
 ## 2018.08.26
 ### 그래프2(DAG(Directed Acyclic Graph), 위상 정렬, 최소 비용 신장 트리(Minimum Spanning Tree), Prim, Kruskal, 최단 경로(Shortest Path), Bellman-Ford)
 :heavy_check_mark: [issue 정리 내용](/contents/180826.md)
-* [#issue1] 방향성이 있는 비순환 그래프(DAG, Directed Acyclic Graph)의 개념
-* [#issue2] 위상 정렬
+* [#issue1] DAG(Directed Acyclic Graph)의 개념
+* [#issue2] 위상 정렬(Topological Sort)
 * [#issue3] 최소 비용 신장 트리(MST, Minimum Spanning Tree)
 * [#issue3-1] Prim MST 알고리즘
 * [#issue3-2] Kruskal MST 알고리즘

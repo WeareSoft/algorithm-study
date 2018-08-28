@@ -10,6 +10,7 @@ import hee.math2_1.*;
 import hee.math2_2.*;
 import hee.tree.*;
 import hee.graph1.*;
+import hee.graph2.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
