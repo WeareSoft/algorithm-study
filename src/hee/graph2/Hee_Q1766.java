@@ -1,20 +1,16 @@
 package hee.graph2;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
-// 일부 학생들의 키를 비교한 결과가 주어졌을 때, 줄을 세우는 프로그램
-public class Hee_Q2252 {
+public class Hee_Q1766 {
     static int N;
     static int M;
 
     public static void run() {
         Scanner scanner = new Scanner(System.in);
 
-        N = scanner.nextInt(); // 학생의 수. 즉 정점의 수 (1≤N≤32,000)
-        M = scanner.nextInt(); // 키를 비교한 횟수. 즉 간선의 수 (1≤M≤100,000)
+        N = scanner.nextInt(); // 정점의 수 (1≤N≤32,000)
+        M = scanner.nextInt(); // 간선의 수 (1≤M≤100,000)
 
         int[] cntOfLink = new int[N + 1]; // 간선의 수에 대한 배열
 
@@ -39,7 +35,7 @@ public class Hee_Q2252 {
      * 위상 정렬
      */
     static void topologicalSort(ArrayList<ArrayList<Integer>> graph, int[] cntOfLink) {
-        Queue<Integer> queue = new LinkedList();
+        Queue<Integer> queue = new PriorityQueue(); // 정점에 우선순위가 존재
 
         // 초기: 선행 정점을 가지지 않는 정점을 큐에 삽입
         for (int i = 1; i < N + 1; i++) {
