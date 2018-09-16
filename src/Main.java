@@ -11,6 +11,7 @@ import hee.math2_2.*;
 import hee.tree.*;
 import hee.graph1.*;
 import hee.graph2.*;
+import hee.samsung.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -135,6 +136,9 @@ public class Main {
 
 //        Hee_Q1654.run();
 
-        Hee_Q1707.run();
+//        Hee_Q1707.run();
+//        Hee_Q1922.run();
+
+        Hee_Q15686.run();
     }
 }
