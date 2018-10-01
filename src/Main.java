@@ -136,7 +136,8 @@ public class Main {
 //        Hee_Q1991.run();
 
 //        Hee_Q1654.run();
-//        Hee_Q1707.run();
+//        Hee_Q2331.run();
+//        Hee_Q11724.run();
 //        Hee_Q1922.run();
 //        Hee_Q1707.run();
 //        Hee_Q11725.run();
@@ -145,11 +146,24 @@ public class Main {
 //        Hee_Q2805.run();
 //        Hee_Q2110.run();
 //        Hee_Q1260.run();
+//        Hee_Q10451.run();
+//        Hee_Q9466.run();
+//        Hee_Q2667.run();
+//        Hee_Q4963.run();
+//        Hee_Q7576.run();
+//        Hee_Q2178.run();
+//        Hee_Q2146.run();
+//        Hee_Q2252.run();
+//        Hee_Q1766.run();
+//        Hee_Q2056.run();
+//        Hee_Q1516.run();
 
-        Hee_Q15686.run();
-
+        /* nhn */
 //        Hee_1809_Q1.run();
 //        Hee_1809_Q3.run();
 //        Hee_1809_Q4.run();
+
+        /* samsung */
+        Hee_Q15686.run();
     }
 }
