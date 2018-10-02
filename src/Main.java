@@ -164,6 +164,7 @@ public class Main {
 //        Hee_1809_Q4.run();
 
         /* samsung */
-        Hee_Q15686.run();
+//        Hee_Q15686.run();
+        Hee_Q15684.run();
     }
 }
