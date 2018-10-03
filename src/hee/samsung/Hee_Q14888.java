@@ -15,6 +15,8 @@ public class Hee_Q14888 {
     static int[] operator; // 연산자 조합에 대한 배열 (index를 값으로 저장)
     static boolean[] visited; // 연산자 조합의 방문 여부
 
+    static int[] operatorCnt = new int[4]; // 연산자의 수에 대한 배열
+
     public static void run() {
         Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
@@ -28,6 +30,7 @@ public class Hee_Q14888 {
         int index = 0;
         for (int i = 0; i < 4; i++) {
             int cntOpr = sc.nextInt(); // 연산자의 수
+            operatorCnt[i] = cntOpr;
 
             for (int j = 0; j < cntOpr; j++) { // 연산자의 수 만큼 해당 index를 연산자 조합 배열에 삽입.
                 operator[index] = i; // (index 0:+, 1:-, 2:*, 3:/)
@@ -35,11 +38,51 @@ public class Hee_Q14888 {
             }
         }
 
-		dfs(0, 0, numbers[0]);
+//		dfs(0, 0, numbers[0]);
+        dfs2(0, numbers[0]);
 
         System.out.println(maxSum);
         System.out.println(minSum);
     }
+
+    public static void dfs2(int depth, int sum) {
+        System.out.println(" depth: " + depth);
+        if (depth == N - 1) {
+            maxSum = Math.max(maxSum, sum);
+            minSum = Math.min(minSum, sum);
+
+            return;
+        }
+
+        for (int i = 0; i < 4; i++) { // 모든 연산자에 대해 반복
+//			System.out.println(" 검사할 연산자의 index: " + i);
+            if (operatorCnt[i] != 0) { // 해당 연산자의 수가 존재하면
+//				System.out.println(" 사용할 연산자의 index: " + i);
+                operatorCnt[i]--; // 사용한 연산자의 수를 하나 감소한다.
+
+                switch (i) {
+                    case 0: // +
+                        dfs2(depth + 1, sum + numbers[depth + 1]);
+                        break;
+                    case 1: // -
+                        dfs2(depth + 1, sum - numbers[depth + 1]);
+                        break;
+                    case 2: // *
+                        dfs2(depth + 1, sum * numbers[depth + 1]);
+                        break;
+                    case 3: // /
+                        dfs2(depth + 1, sum / numbers[depth + 1]);
+                        break;
+                }
+
+//				System.out.println(" 부모로 올라감. 되돌릴 연산자의 index: " + i);
+                // backtracking
+                operatorCnt[i]++; // 사용했던 연산자의 수를 되돌린다.
+
+            } // 해당 연산자가 없으면 다음 연산자를 확인한다.
+        }
+    }
+
 
     public static void dfs(int start, int depth, int sum) {
         int result = 0;
