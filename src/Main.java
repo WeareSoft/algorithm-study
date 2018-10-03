@@ -2,6 +2,7 @@ import doy.ds1.*;
 import doy.math1_2.*;
 import doy.math2_1.*;
 import doy.math2_2.*;
+import doy.samsung.Doy_Q15686;
 import doy.tree.*;
 import hee.datastructure1.*;
 import hee.datastructure2.*;
@@ -164,6 +165,7 @@ public class Main {
 //        Hee_1809_Q4.run();
 
         /* samsung */
-        Hee_Q15686.run();
+//        Hee_Q15686.run();
+        Doy_Q15686.run();
     }
 }
