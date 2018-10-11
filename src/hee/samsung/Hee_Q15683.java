@@ -1,230 +1,200 @@
 package hee.samsung;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-/**
- * 문제풀이방법: 완전탐색 + 깊이우선 이용
- *
- * 1. cctv의 개수를 모두 센다. 그 후 cctv를 전부 돌려본다(90도 방향으로).
- *
- */
-
-// 사각 지대의 최소 크기를 출력한다. 0의 최소 개수
+/** 브루트 포스 */
 public class Hee_Q15683 {
-    static int N, M;
+    static int[] dx = { -1, 1, 0, 0 }; // (0:상, 1:하, 2:좌, 3:우)
+    static int[] dy = { 0, 0, -1, 1 };
+    static int n, m;
 
-    static int[][] office;
-    static int[][] visited; // 방문했으면 -1
-    static int[] EWSN;
-    static ArrayList<myPoint> cctv;
+    static int[][] map;
+    static boolean[][] visited;
+    static boolean[][] originVisited;
+    static ArrayList<CCTV> cctv = new ArrayList();
 
-    static final int UP = 0;
-    static final int DOWN = 1;
-    static final int LEFT = 2;
-    static final int RIGHT = 3;
+    static int res = Integer.MAX_VALUE; // 사각지대의 최소 개수
 
-    static int cntBlindSpot = Integer.MAX_VALUE; // result(사각지대)
+    public static void run() {
+        Scanner sc = new Scanner(System.in);
 
-    public static void run() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        n = sc.nextInt();
+        m = sc.nextInt();
+        map = new int[n][m];
+        visited = new boolean[n][m];
+        originVisited = new boolean[n][m];
 
-        String[] str = br.readLine().split(" ");
-        N = Integer.parseInt(str[0]);
-        M = Integer.parseInt(str[1]);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                int value = sc.nextInt();
+                map[i][j] = value;
 
-        office = new int[N][M];
-        visited = new int[N][M];
-        cctv = new ArrayList<myPoint>();
-
-        for (int i = 0; i < N; i++) {
-            str = br.readLine().split(" ");
-            for (int j = 0; j < M; j++) {
-                int type = Integer.parseInt(str[j]);
-                office[i][j] = type;
-
-                if (type != 0 && type != 6) { // cctv가 존재하는 공간이면
-                    cctv.add(new myPoint(i, j, type));
+                if (value != 0) { // 빈칸이 아니면 이미 감시한 공간으로 표시
+                    visited[i][j] = true;
+                    if (value != 6) // cctv면 ArrayList에 넣음
+                        cctv.add(new CCTV(i, j, value));
                 }
             }
-        }
+        } // input
 
-        EWSN = new int[cctv.size()]; // 모든 cctv에 대해 동서남북으로 탐색
-        dfs(0);
-        bw.write(Integer.toString(cntBlindSpot));
-        bw.close();
+        initVisited(visited, originVisited); // 최초의 감시 정보 저장
+        dfs(0); // 탐색 수행
+        System.out.println(res);
     }
 
-    public static void dfs(int cctvIndex) {
-        // 탐색할 cctv가 더이상 없다면 값을 출력 [말단 노드이면]
-        if (cctvIndex == cctv.size()) {
-            // 방문 여부 2차원 배열 초기화
-            init();
-
-            // 모든 cctv에 대한 이동
-            for (int k = 0; k < cctv.size(); k++) {
-                myPoint p = cctv.get(k);
-                int typeNum = p.typeNum;
-
-                switch (typeNum) {
-                    case 1: // 상, 하, 좌, 우 4가지
-                        if (EWSN[k] == 0) // NORTH
-                            move(p, UP);
-                        else if (EWSN[k] == 1) // EAST
-                            move(p, RIGHT);
-                        else if (EWSN[k] == 2) // SOUTH
-                            move(p, DOWN);
-                        else if (EWSN[k] == 3) // WEST
-                            move(p, LEFT);
-                        break;
-                    case 2: // 상하, 좌우 2가지
-                        if (EWSN[k] == 0) { // NORTH
-                            move(p, UP);
-                            move(p, DOWN);
-                        }
-                        else if (EWSN[k] == 1) { // EAST
-                            move(p, LEFT);
-                            move(p, RIGHT);
-                        }
-                        else if (EWSN[k] == 2) { // SOUTH
-                            move(p, UP);
-                            move(p, DOWN);
-                        }
-                        else if (EWSN[k] == 3) { // WEST
-                            move(p, LEFT);
-                            move(p, RIGHT);
-                        }
-                        break;
-                    case 3: // 상우, 우하, 좌하, 상좌 4가지
-                        if (EWSN[k] == 0) { // NORTH
-                            move(p, UP);
-                            move(p, RIGHT);
-                        }
-                        else if (EWSN[k] == 1) { // EAST
-                            move(p, RIGHT);
-                            move(p, DOWN);
-                        }
-                        else if (EWSN[k] == 2) { // SOUTH
-                            move(p, LEFT);
-                            move(p, DOWN);
-                        }
-                        else if (EWSN[k] == 3) { // WEST
-                            move(p, UP);
-                            move(p, LEFT);
-                        }
-                        break;
-                    case 4: // 상좌우, 상하우, 하좌우, 상하좌 4가지
-                        if (EWSN[k] == 0) { // NORTH
-                            move(p, UP);
-                            move(p, LEFT);
-                            move(p, RIGHT);
-                        }
-                        else if (EWSN[k] == 1) { // EAST
-                            move(p, UP);
-                            move(p, DOWN);
-                            move(p, RIGHT);
-                        }
-                        else if (EWSN[k] == 2) { // SOUTH
-                            move(p, DOWN);
-                            move(p, LEFT);
-                            move(p, RIGHT);
-                        }
-                        else if (EWSN[k] == 3) { // WEST
-                            move(p, UP);
-                            move(p, DOWN);
-                            move(p, LEFT);
-                        }
-                        break;
-                    case 5: // 상하좌우 1가지
-                        move(p, UP);
-                        move(p, RIGHT);
-                        move(p, DOWN);
-                        move(p, LEFT);
-                        break;
-                }
+    public static void dfs(int depth) {
+        // [출력] 모든 cctv를 탐색했으면, 사각지대의 최소 개수를 구한다.
+        if (depth == cctv.size()) {
+            // 모든 cctv를 돌면서 해당 cctv의 번호에 따라 회전하는 방향(rotation)에서의 감시하는 공간에 표시
+            for (CCTV c : cctv) {
+                check(c);
             }
-
-            // 가장 최소인 값을 출력
-            cntBlindSpot = Math.min(getBlindSpot(), cntBlindSpot);
+            res = Math.min(res, getblindSpot()); // 사각지대의 최소 개수 변경
+            initVisited(originVisited, visited); // 감시했던 공간을 처음으로 초기화
             return;
         }
 
-        // 탐색할 cctv가 남아있다면 cctv에 대한 탐색을 진행한다.
-        // cctv를 90도로 회전(동서남북)하면서 다음 노드를 탐색
+        // [재탐색] N부터 시계 방향으로 90도씩 회전하면서 4방향 모두에 대해 탐색 수행 (N E S W)
         for (int i = 0; i < 4; i++) {
-            // 0: NORTH 부터 90도로 회전
-            EWSN[cctvIndex] = i;
-            dfs(cctvIndex + 1); // DFS로 재귀.
+            cctv.get(depth).setRotation(i); // depth번째 cctv의 회전 방향 설정.
+            dfs(depth + 1); // (depth + 1)번째 cctv 선택
         }
     }
 
-    /* 방문 여부 2차원 배열의 값 초기화 */
-    public static void init() {
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                visited[i][j] = office[i][j];
-            }
+    /* cctv 번호에 맞는 방법으로 감시 */
+    // cctv마다 회전하는 방향(rotation)에서의 감시할 수 있는 방법이 다르다.
+    public static void check(CCTV c) {
+        // rotation: N(0), E(1), S(2), W(3)
+        switch (c.cctvNum) {
+            case 1: // [↑ 기준] N:상(0), E:우(3), S:하(1), W:좌(2)
+                if (c.rotation == 0)
+                    watch(c, 0);
+                else if (c.rotation == 1)
+                    watch(c, 3);
+                else if (c.rotation == 2)
+                    watch(c, 1);
+                else
+                    watch(c, 2);
+                break;
+            case 2: // [←→ 기준] N:좌우, E:상하, S:좌우, W:상하
+                if (c.rotation == 0 || c.rotation == 2) {
+                    watch(c, 2);
+                    watch(c, 3);
+                } else {
+                    watch(c, 0);
+                    watch(c, 1);
+                }
+                break;
+            case 3:// [↑→ 기준] N:상우, E:하우, S:하좌, W:상좌
+                if (c.rotation == 0) {
+                    watch(c, 0);
+                    watch(c, 3);
+                } else if (c.rotation == 1) {
+                    watch(c, 1);
+                    watch(c, 3);
+                } else if (c.rotation == 2) {
+                    watch(c, 1);
+                    watch(c, 2);
+                } else {
+                    watch(c, 0);
+                    watch(c, 2);
+                }
+                break;
+            case 4:// [←↑→ 기준] N:상좌우, E:상하우, S:하좌우, W:상하좌
+                if (c.rotation == 0) {
+                    watch(c, 0);
+                    watch(c, 2);
+                    watch(c, 3);
+                } else if (c.rotation == 1) {
+                    watch(c, 0);
+                    watch(c, 1);
+                    watch(c, 3);
+                } else if (c.rotation == 2) {
+                    watch(c, 1);
+                    watch(c, 2);
+                    watch(c, 3);
+                } else {
+                    watch(c, 0);
+                    watch(c, 1);
+                    watch(c, 2);
+                }
+                break;
+            case 5:// 상하좌우
+                watch(c, 0);
+                watch(c, 1);
+                watch(c, 2);
+                watch(c, 3);
+                break;
         }
     }
 
-    /* 범위 내에서 상하좌우로 이동하면서 방문 */
-    public static void move(myPoint p, int direction) {
-        int curX = p.x;
-        int curY = p.y;
-
-        if (direction == UP) { // -1, 0
-            for (int i = curX; i >= 0; i--) {
-                if (office[i][curY] == 6) // 벽인 경우
-                    return;
-                visited[i][curY] = -1; // 방문 표시
-            }
-        } else if (direction == DOWN) { // 1, 0
-            for (int i = curX; i < N; i++) {
-                if (office[i][curY] == 6) // 벽인 경우
-                    return;
-                visited[i][curY] = -1; // 방문 표시
-            }
-        } else if (direction == LEFT) { // 0, -1
-            for (int j = curY; j >= 0; j--) {
-                if (office[curX][j] == 6) // 벽인 경우
-                    return;
-                visited[curX][j] = -1; // 방문 표시
-            }
-        } else if (direction == RIGHT) { // 0, 1
-            for (int j = curY; j < M; j++) {
-                if (office[curX][j] == 6) // 벽인 경우
-                    return;
-                visited[curX][j] = -1; // 방문 표시
-            }
+    /* 상하좌우 방향에 따라 감시할 수 있는 모든 곳에 감시 표시 */
+    // 벽이면 더이상 감시할 수 없다.
+    public static void watch(CCTV c, int direction) {
+        switch (direction) {
+            case 0: // 상(x--)
+                for (int i = c.x; i >= 0; i--) {
+                    if (map[i][c.y] == 6)
+                        break;
+                    visited[i][c.y] = true; // 감시 가능
+                }
+                break;
+            case 1: // 하(x++)
+                for (int i = c.x; i < n; i++) {
+                    if (map[i][c.y] == 6)
+                        break;
+                    visited[i][c.y] = true; // 감시 가능
+                }
+                break;
+            case 2: // 좌(y--)
+                for (int i = c.y; i >= 0; i--) {
+                    if (map[c.x][i] == 6)
+                        break;
+                    visited[c.x][i] = true; // 감시 가능
+                }
+                break;
+            case 3: // 우(y++)
+                for (int i = c.y; i < m; i++) {
+                    if (map[c.x][i] == 6)
+                        break;
+                    visited[c.x][i] = true; // 감시 가능
+                }
+                break;
         }
     }
 
-    /* 사각지대의 수 */
-    public static int getBlindSpot() {
-        int num = 0;
-
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                if (visited[i][j] == 0) // 방문하지 못한 공간이면
-                    num++;
-            }
-        }
-        return num;
+    /* 사각지대의 개수 */
+    public static int getblindSpot() {
+        int cnt = 0;
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < m; j++)
+                if (!visited[i][j]) // 감시하지 못한 공간
+                    cnt++;
+        return cnt;
     }
 
-    public static class myPoint {
-        public int x, y, typeNum;
+    /* 감시 여부 초기화: oriVisited -> visited로 복사 */
+    public static void initVisited(boolean[][] oriVisited, boolean[][] visited) {
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < m; j++)
+                visited[i][j] = oriVisited[i][j];
+    }
 
-        public myPoint(int x, int y, int typeNum) {
+    public static class CCTV {
+        public int x;
+        public int y;
+        public int cctvNum; // 번호
+        public int rotation; // 회전 방향 (0:N, 1:E, 2:S, 3:W)
+
+        public CCTV(int x, int y, int cctvNum) {
             this.x = x;
             this.y = y;
-            this.typeNum = typeNum;
+            this.cctvNum = cctvNum;
+        }
+
+        public void setRotation(int rotation) {
+            this.rotation = rotation;
         }
     }
 }
-
