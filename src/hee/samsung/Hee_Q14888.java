@@ -3,100 +3,102 @@ package hee.samsung;
 import java.util.Scanner;
 
 /**
- * 연산자
- * -> 모든 순열에 대한 조합 (n! 개)
- * -> 완전탐색 이용. */
+ * 브루트 포스 - 모든 순열에 대한 조합 (n! 개)
+ *
+ * [방법1]: 연산자의 종류를 기준 [방법2]: 연산자 조합 배열(n-1개)을 기준
+ */
 public class Hee_Q14888 {
-    static int N;
+    static int n;
     static int maxSum = Integer.MIN_VALUE;
     static int minSum = Integer.MAX_VALUE;
 
     static int[] numbers; // 연산에 필요한 고정 숫자들
+    static int[] operatorCnt = new int[4]; // 연산자의 수에 대한 배열
+
     static int[] operator; // 연산자 조합에 대한 배열 (index를 값으로 저장)
     static boolean[] visited; // 연산자 조합의 방문 여부
 
-    static int[] operatorCnt = new int[4]; // 연산자의 수에 대한 배열
-
     public static void run() {
         Scanner sc = new Scanner(System.in);
-        N = sc.nextInt();
+        n = sc.nextInt();
 
-        numbers = new int[N];
-        for (int i = 0; i < N; i++)
+        numbers = new int[n];
+        for (int i = 0; i < n; i++)
             numbers[i] = sc.nextInt();
 
-        operator = new int[N - 1];
-        visited = new boolean[N - 1];
+        // [방법2]
+        operator = new int[n - 1];
+        visited = new boolean[n - 1];
         int index = 0;
+
         for (int i = 0; i < 4; i++) {
             int cntOpr = sc.nextInt(); // 연산자의 수
             operatorCnt[i] = cntOpr;
 
+            // [방법2]
             for (int j = 0; j < cntOpr; j++) { // 연산자의 수 만큼 해당 index를 연산자 조합 배열에 삽입.
                 operator[index] = i; // (index 0:+, 1:-, 2:*, 3:/)
                 index++;
             }
         }
 
-//		dfs(0, 0, numbers[0]);
-        dfs2(0, numbers[0]);
+//		dfs(0, numbers[0]);
+        dfs2(0, 0, numbers[0]); // [방법2]
 
         System.out.println(maxSum);
         System.out.println(minSum);
     }
 
-    public static void dfs2(int depth, int sum) {
-        System.out.println(" depth: " + depth);
-        if (depth == N - 1) {
+    /* [방법1] 연산자의 종류를 기준으로 조합을 만든다.(훨씬 빠름) */
+    public static void dfs(int depth, int sum) {
+        // [출력] 연산자의 수만큼 조합했다면 최소, 최대값 출력.
+        if (depth == n - 1) {
             maxSum = Math.max(maxSum, sum);
             minSum = Math.min(minSum, sum);
-
-            return;
-        }
-
-        for (int i = 0; i < 4; i++) { // 모든 연산자에 대해 반복
-//			System.out.println(" 검사할 연산자의 index: " + i);
-            if (operatorCnt[i] != 0) { // 해당 연산자의 수가 존재하면
-//				System.out.println(" 사용할 연산자의 index: " + i);
-                operatorCnt[i]--; // 사용한 연산자의 수를 하나 감소한다.
-
-                switch (i) {
-                    case 0: // +
-                        dfs2(depth + 1, sum + numbers[depth + 1]);
-                        break;
-                    case 1: // -
-                        dfs2(depth + 1, sum - numbers[depth + 1]);
-                        break;
-                    case 2: // *
-                        dfs2(depth + 1, sum * numbers[depth + 1]);
-                        break;
-                    case 3: // /
-                        dfs2(depth + 1, sum / numbers[depth + 1]);
-                        break;
-                }
-
-//				System.out.println(" 부모로 올라감. 되돌릴 연산자의 index: " + i);
-                // backtracking
-                operatorCnt[i]++; // 사용했던 연산자의 수를 되돌린다.
-
-            } // 해당 연산자가 없으면 다음 연산자를 확인한다.
-        }
-    }
-
-
-    public static void dfs(int start, int depth, int sum) {
-        int result = 0;
-
-        if (depth == N - 1) {
-//            print(" 단말 노드 도착=>", operator, visited);
-            maxSum = Math.max(maxSum, sum);
-            minSum = Math.min(minSum, sum);
-
 //			return;
         }
 
-        for (int i = 0; i < N - 1; i++) { // 처음부터 끝까지 반복
-            if (visited[i] == false) { // 처음부터 반복했을 때 앞에서 선택하지 않은 것을 선택.
+        // [재탐색] 다음 연산자 선택
+        for (int i = 0; i < 4; i++) {
+            if (operatorCnt[i] != 0) { // 해당 연산자의 수가 남아있는 경우에만 사용 가능.
+                // 해당 연산자 사용
+                operatorCnt[i]--;
+                // 연산자에 따른 수식 계산 후 다음 연산자 선택
+                switch (i) {
+                    case 0: // +
+                        dfs(depth + 1, sum + numbers[depth + 1]);
+                        break;
+                    case 1: // -
+                        dfs(depth + 1, sum - numbers[depth + 1]);
+                        break;
+                    case 2: // *
+                        dfs(depth + 1, sum * numbers[depth + 1]);
+                        break;
+                    case 3: // /
+                        dfs(depth + 1, sum / numbers[depth + 1]);
+                        break;
+                }
+                // backtracking
+                operatorCnt[i]++;
+            }
+        }
+    }
+
+    /* [방법2] 연산자 조합 배열(n-1개)을 기준으로 조합을 만든다. */
+    public static void dfs2(int start, int depth, int sum) {
+        // [출력] 연산자의 수만큼 조합했다면 최소, 최대값 출력.
+        if (depth == n - 1) {
+            maxSum = Math.max(maxSum, sum);
+            minSum = Math.min(minSum, sum);
+//			return; // [주의] 있으면 틀림. 밑에 backtracking을 수행해야하므로
+        }
+
+        int result = 0;
+        // [재탐색] 다음 연산자 선택
+        for (int i = 0; i < n - 1; i++) { // 처음부터 끝까지 반복
+            if (!visited[i]) { // 처음부터 반복했을 때 앞에서 선택하지 않은 것을 선택.
+                // 방문 표시
+                visited[i] = true;
                 switch (operator[i]) {
                     case 0:
                         result = sum + numbers[depth + 1];
@@ -111,31 +113,11 @@ public class Hee_Q14888 {
                         result = sum / numbers[depth + 1];
                         break;
                 }
-                visited[i] = true; // 방문 표시
-//                print("새로운 노드 방문-> ", operator, visited);
-                dfs(i, depth + 1, result); // 다음 단계 수행. start root는 자기 자신부터 다시 탐색.
+                // 다음 단계 수행. start root는 자기 자신부터 다시 탐색.
+                dfs2(i, depth + 1, result);
             }
         }
-
-        // backtracking
+        // backtracking [주의] for문 밖에서 처리
         visited[start] = false;
-//        print("부모로 올라감->", operator, visited);
-    }
-
-    /* 과정 확인용 출력 함수 */
-    public static void print(String str, int[] operator, boolean[] visited) {
-        System.out.println(str);
-        for (int i = 0; i < operator.length; i++) {
-            System.out.print(operator[i] + " ");
-        }
-        System.out.println();
-        for (int i = 0; i < visited.length; i++) {
-            if (visited[i] == true)
-                System.out.print("t ");
-            else
-                System.out.print("f ");
-        }
-        System.out.println();
     }
 }
-
