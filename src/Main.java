@@ -2,12 +2,15 @@ import doy.ds1.*;
 import doy.math1_2.*;
 import doy.math2_1.*;
 import doy.math2_2.*;
+import doy.samsung.*;
 import doy.tree.*;
+import hee.boj.*;
 import hee.datastructure1.*;
 import hee.datastructure2.*;
 import hee.math1_2.*;
 import hee.math2_1.*;
 import hee.math2_2.*;
+import hee.swexpert.*;
 import hee.tree.*;
 import hee.graph1.*;
 import hee.graph2.*;
@@ -158,6 +161,16 @@ public class Main {
 //        Hee_Q2056.run();
 //        Hee_Q1516.run();
 
+        /* boj */
+//        Hee_Q2309.run();
+//        Hee_Q6603.run();
+//        Hee_Q1697.run();
+//        Hee_Q12851.run();
+//        Hee_Q1012.run();
+
+        /* swexpert */
+//        Hee_Q1247.run();
+
         /* nhn */
 //        Hee_1809_Q1.run();
 //        Hee_1809_Q3.run();
@@ -165,7 +178,26 @@ public class Main {
 
         /* samsung */
 //        Hee_Q15686.run();
+//        Doy_Q15686.run();
 
+//        Hee_Q15685.run();
+//        Doy_Q15685.run();
+      
+//        Hee_Q15684.run();
+//        Doy_Q15684.run();
+      
+//        Hee_Q14891.run();
+//        Doy_Q14891.run();
+            
+//        Hee_Q14889.run();
+//        Doy_Q14889.run();
+
+//        Hee_Q14888.run();
+//        Doy_Q14888.run();
+
+//        Doy_Q14503.run();
+      
         Hee_Q15683.run();
+
     }
 }
