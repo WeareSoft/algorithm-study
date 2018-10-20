@@ -164,6 +164,9 @@ public class Main {
         /* boj */
 //        Hee_Q2309.run();
 //        Hee_Q6603.run();
+//        Hee_Q1697.run();
+//        Hee_Q12851.run();
+//        Hee_Q1012.run();
 
         /* swexpert */
 //        Hee_Q1247.run();
@@ -189,6 +192,10 @@ public class Main {
 //        Hee_Q14889.run();
 //        Doy_Q14889.run();
 
+//        Hee_Q14888.run();
+//        Doy_Q14888.run();
+
         Doy_Q14503.run();
+
     }
 }
