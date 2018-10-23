@@ -190,3 +190,12 @@
 * [#issue4] 시험 감독
 * [#issue5] 뱀
 * [#issue6] 구슬 탈출 2
+
+
+## 2018.10.28
+### 삼성 SW 역량 테스트 기출 문제 (4)
+:heavy_check_mark: [issue 정리 내용](/contents/181028.md)
+* [#issue1] 큐빙
+* [#issue2] 인구 이동 
+* [#issue3] 나무 재테크 
+* [#issue4] 아기 상어
