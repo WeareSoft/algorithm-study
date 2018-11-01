@@ -164,6 +164,12 @@ public class Main {
         /* boj */
 //        Hee_Q2309.run();
 //        Hee_Q6603.run();
+//        Hee_Q1697.run();
+//        Hee_Q12851.run();
+//        Hee_Q1012.run();
+//        Hee_Q1094.run();
+//        Hee_Q1600.run();
+//        Hee_Q2455.run();
 
         /* swexpert */
 //        Hee_Q1247.run();
@@ -182,13 +188,36 @@ public class Main {
       
 //        Hee_Q15684.run();
 //        Doy_Q15684.run();
+
+//        Hee_Q15683.run();
+
       
 //        Hee_Q14891.run();
 //        Doy_Q14891.run();
-            
+
+//        Hee_Q14890.run();
+        Doy_Q14890.run();
+      
 //        Hee_Q14889.run();
 //        Doy_Q14889.run();
+      
+//        Doy_Q14503.run();
+      
+//        Hee_Q14502.run();
+//        Doy_Q14502.run();
+      
+//        Doy_Q14501.run();
+      
+//        Hee_Q14500.run();
 
-        Doy_Q14890.run();
+//        Hee_Q14499.run();
+
+//        Hee_Q14888.run();
+//        Doy_Q14888.run();
+
+//        Hee_Q13458.run();
+      
+//        Hee_Q3190.run();
+
     }
 }
