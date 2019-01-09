@@ -1,21 +1,4 @@
-import doy.ds1.*;
-import doy.math1_2.*;
-import doy.math2_1.*;
-import doy.math2_2.*;
-import doy.samsung.*;
-import doy.tree.*;
-import hee.boj.*;
-import hee.datastructure1.*;
-import hee.datastructure2.*;
-import hee.math1_2.*;
-import hee.math2_1.*;
-import hee.math2_2.*;
-import hee.swexpert.*;
-import hee.tree.*;
-import hee.graph1.*;
-import hee.graph2.*;
 import hee.samsung.*;
-import hee.nhn.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -189,13 +172,9 @@ public class Main {
 //        Hee_Q15684.run();
 //        Doy_Q15684.run();
       
-//        Hee_Q15683.run();
-      
 //        Hee_Q14891.run();
 //        Doy_Q14891.run();
 
-//        Hee_Q14890.run();
-            
 //        Hee_Q14889.run();
 //        Doy_Q14889.run();
       
@@ -204,7 +183,7 @@ public class Main {
 //        Hee_Q14502.run();
 //        Doy_Q14502.run();
       
-        Doy_Q14501.run();
+//        Doy_Q14501.run();
       
 //        Hee_Q14500.run();
 
@@ -213,8 +192,10 @@ public class Main {
 //        Hee_Q14888.run();
 //        Doy_Q14888.run();
 
+//        Hee_Q14890.run();
+
 //        Hee_Q13458.run();
-      
 //        Hee_Q3190.run();
+//        Hee_Q15683.run();
     }
 }
