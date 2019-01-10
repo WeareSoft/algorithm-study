@@ -1,6 +1,6 @@
 package hee.codility.lesson;
 
-public class Anonymous {
+public class TimeComplexity_FrogJmp {
     public int solution(int X, int Y, int D) {
         // write your code in Java SE 8
         int c = Y - X;
