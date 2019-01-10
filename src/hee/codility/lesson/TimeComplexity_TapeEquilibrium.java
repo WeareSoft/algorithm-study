@@ -1,10 +1,11 @@
 package hee.codility.lesson;
 
 public class TimeComplexity_TapeEquilibrium {
+    // [TIP] 시간복잡도 생각!! 이중 반복문: O(N^2)
     public int solution(int[] A) {
         int totalRight = 0;
         int totalLeft = 0;
-        for (int i = 0; i < A.length; i++) { // 시간복잡도 생각!! 이중 반복문: O(N^2)
+        for (int i = 0; i < A.length; i++) {
             totalRight += A[i];
         }
 

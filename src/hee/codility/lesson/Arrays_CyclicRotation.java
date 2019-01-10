@@ -1,11 +1,10 @@
 package hee.codility.lesson;
 
 public class Arrays_CyclicRotation {
+    // [TIP] input ([], 0) 생각
     public int[] solution(int[] A, int K) {
-        // write your code in Java SE 8
-
         int length = A.length;
-        if (length == 0) { // input ([], 0) 생각
+        if (length == 0) {
             return A;
         }
 
