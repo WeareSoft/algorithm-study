@@ -1,18 +1,18 @@
-package hee.zom;
+package hee.codility.zom;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Test4 {
     public static void main(String[] args) {
-//        int[] A = {1, 3, -1};
+        int[] A = {1, 3, -1};
 //        int[] A = {-1000000000, 1};
 //        int[] A = {1};
 //        int[] A = {-8, 4, 0, 5, -3, 6};
 //        int[] A = {-8, 6, 0, 5, -3, 6};
-//        int[] A = {-8,-8,-8,-8,-8};
-//        int[] A = {6,6,5,6,6};
-        int[] A = {-8, 6, 0, 6, -3, 6};
+//        int[] A = {-8, -8, -8, -8, -8};
+//        int[] A = {6, 6, 5, 6, 6};
+//        int[] A = {-8, 6, 0, 6, -3, 6};
 
         if (A.length == 1) {
             System.out.println(A[0] + A[0]);
@@ -41,10 +41,7 @@ public class Test4 {
                 int length = A[j] + Math.abs(maxIndexes.get(i) - j);
                 maxLength = Math.max(maxLength, length);
             }
-
-            if (max <= maxLength) {
-                max = maxLength;
-            }
+            max = Math.max(max, maxLength);
         }
 
         System.out.println(max + maxNum);

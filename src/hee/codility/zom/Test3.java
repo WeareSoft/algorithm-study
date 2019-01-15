@@ -1,4 +1,4 @@
-package hee.zom;
+package hee.codility.zom;
 
 import java.util.LinkedHashMap;
 
