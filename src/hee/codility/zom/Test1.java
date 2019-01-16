@@ -1,15 +1,11 @@
 package hee.codility.zom;
 
 public class Test1 {
-    public static void main(String[] args) {
-//        int[] A = {1, 4, -1, 3, 2};
-//        int[] A = {1};
-        int[] A = {1, -1};
-
+    public int solution(int[] A) {
         if (A.length == 1) {
-            System.out.println(1);
-            return;
-//            return 1;
+//            System.out.println(1);
+//            return;
+            return 1;
         }
 
         int cnt = 0;
@@ -22,7 +18,7 @@ public class Test1 {
             i = A[i];
             ++cnt;
         }
-        System.out.println(cnt);
-//        return cnt;
+//        System.out.println(cnt);
+        return cnt;
     }
 }
