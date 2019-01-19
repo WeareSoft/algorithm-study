@@ -1,4 +1,4 @@
-package hee.codility.zom;
+package hee.codility.z;
 
 import org.junit.Before;
 import org.junit.Test;

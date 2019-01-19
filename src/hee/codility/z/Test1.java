@@ -1,4 +1,4 @@
-package hee.codility.zom;
+package hee.codility.z;
 
 public class Test1 {
     public int solution(int[] A) {

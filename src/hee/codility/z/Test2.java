@@ -1,4 +1,4 @@
-package hee.codility.zom;
+package hee.codility.z;
 
 import java.util.ArrayList;
 import java.util.List;
