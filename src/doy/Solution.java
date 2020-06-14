@@ -1,6 +1,6 @@
-package hee;
+package doy;
 
-import hee.boj.etc.Hee_Q1000;
+import doy.etc.Doy_Q1000;
 
 public class Solution {
 
@@ -9,6 +9,6 @@ public class Solution {
     }
 
     public static void solution() {
-        Hee_Q1000.run();
+        Doy_Q1000.run();
     }
 }
