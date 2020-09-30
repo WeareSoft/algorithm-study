@@ -1,4 +1,4 @@
-package dami.leetcode;
+package dami.leetcode.easy;
 
 // Submission Detail : https://leetcode.com/submissions/detail/356536589/
 public class Reverse_Integer_7 {

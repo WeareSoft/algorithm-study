@@ -1,4 +1,4 @@
-package dami.leetcode;
+package dami.leetcode.easy;
 
 // Submission Detail : https://leetcode.com/submissions/detail/356520239/
 public class Two_Sum_1 {
