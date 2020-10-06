@@ -5,6 +5,7 @@ import dami.leetcode.ListNode;
 import dami.leetcode.easy.Palindrome_Number_9;
 import dami.naver_2020.Task1;
 import dami.programmers.level2.멀쩡한_사각형;
+import dami.programmers.level2.일이사_나라의_숫자;
 
 
 public class Solution {
@@ -31,6 +32,7 @@ public class Solution {
         //////////////////////////////////////////////////////////////////////////////
         /*                              programmers                                 */
         //new 멀쩡한_사각형().solution(100000000, 100000001);
+        //new 일이사_나라의_숫자().solution(20);
         //////////////////////////////////////////////////////////////////////////////
 
 
