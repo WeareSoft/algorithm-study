@@ -1,5 +1,6 @@
 package dami;
 
+import dami.hackerrank.medium.The_Time_in_Words;
 import dami.leetcode.Add_Two_Numbers_2;
 import dami.leetcode.ListNode;
 import dami.leetcode.easy.Palindrome_Number_9;
@@ -26,6 +27,11 @@ public class Solution {
         //new Reverse_Integer_7().reverse(-123);
         //new Palindrome_Number_9().isPalindrome(1000000001);
         //new Roman_to_Integer_13().romanToInt("MMMCMXCIX");
+        //////////////////////////////////////////////////////////////////////////////
+
+        //////////////////////////////////////////////////////////////////////////////
+        /*                              hacker rank                                 */
+        //new The_Time_in_Words().timeInWords(12, 50);
         //////////////////////////////////////////////////////////////////////////////
 
         //////////////////////////////////////////////////////////////////////////////
