@@ -1,24 +1,5 @@
 package dami;
 
-import dami.coupang.Task1;
-import dami.coupang.Task2;
-import dami.coupang.Task3;
-import dami.coupang.Task4;
-import dami.hackerrank.medium.Highest_Value_Palindrome;
-import dami.hackerrank.medium.Sherlock_and_the_Valid_String;
-import dami.hackerrank.medium.The_Time_in_Words;
-import dami.leetcode.Add_Two_Numbers_2;
-import dami.leetcode.ListNode;
-import dami.leetcode.easy.Palindrome_Number_9;
-import dami.leetcode.easy.Roman_to_Integer_13;
-//import dami.programmers.backend.Task1;
-//import dami.programmers.backend.Task2;
-//import dami.programmers.backend.Task3;
-//import dami.programmers.backend.Task4;
-import dami.programmers.level2.기능개발;
-import dami.programmers.level2.멀쩡한_사각형;
-import dami.programmers.level2.일이사_나라의_숫자;
-
 public class Solution {
     public static void main(String[] args) {
         solution();
