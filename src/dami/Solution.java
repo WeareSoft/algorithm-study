@@ -11,12 +11,16 @@ import dami.leetcode.Add_Two_Numbers_2;
 import dami.leetcode.ListNode;
 import dami.leetcode.easy.Palindrome_Number_9;
 import dami.leetcode.easy.Roman_to_Integer_13;
+//import dami.programmers.backend.Task1;
+//import dami.programmers.backend.Task2;
+//import dami.programmers.backend.Task3;
+//import dami.programmers.backend.Task4;
+import dami.programmers.level2.기능개발;
 import dami.programmers.level2.멀쩡한_사각형;
 import dami.programmers.level2.일이사_나라의_숫자;
 
-
 public class Solution {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         solution();
     }
 
@@ -35,17 +39,22 @@ public class Solution {
         //new Roman_to_Integer_13().romanToInt("MMMCMXCIX");
         //////////////////////////////////////////////////////////////////////////////
 
+
+
         //////////////////////////////////////////////////////////////////////////////
         /*                              hacker rank                                 */
         //new The_Time_in_Words().timeInWords(12, 50);
         //new Highest_Value_Palindrome().highestValuePalindrome("092282", 6, 3);
-        //System.out.println(new Sherlock_and_the_Valid_String().isValid("abcdefghhgfedecba"));
+        //new Sherlock_and_the_Valid_String().isValid("aabbcd");
         //////////////////////////////////////////////////////////////////////////////
+
+
 
         //////////////////////////////////////////////////////////////////////////////
         /*                              programmers                                 */
         //new 멀쩡한_사각형().solution(100000000, 100000001);
         //new 일이사_나라의_숫자().solution(20);
+        //new 기능개발().solution(new int[]{93, 30, 55}, new int[]{1, 30, 5});
         //////////////////////////////////////////////////////////////////////////////
 
 
