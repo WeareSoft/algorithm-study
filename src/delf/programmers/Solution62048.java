@@ -1,4 +1,4 @@
-package delf.programmers;
+package programmers;
 
 public class Solution62048 {
     public static void main(String[] args) {
