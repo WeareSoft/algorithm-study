@@ -31,7 +31,7 @@ public class Solution1829 {
     }
 
     private int bfs(int x, int y, int[][] picture, boolean[][] visited) {
-        int area = 0;
+        int area = 1;
         visited[x][y] = true;
 
         Queue<Node> queue = new LinkedList<>();
@@ -43,14 +43,15 @@ public class Solution1829 {
                 int nx = now.x + d[X];
                 int ny = now.y + d[Y];
 
-                if (0 <= nx && nx < picture.length && 0 <= ny && ny < picture[0].length) {
-                    if (picture[nx][ny] != picture[x][y] || visited[nx][ny]) {
-                        continue;
-                    }
-                    queue.add(new Node(nx, ny));
-                    visited[nx][ny] = true;
-                    area++;
+                if (nx < 0 || nx >= picture.length || ny < 0 || ny >= picture[0].length) {
+                    continue;
                 }
+                if (picture[nx][ny] != picture[x][y] || visited[nx][ny]) {
+                    continue;
+                }
+                queue.add(new Node(nx, ny));
+                visited[nx][ny] = true;
+                area++;
             }
         }
         return area;
@@ -96,10 +97,10 @@ public class Solution1829 {
             int nx = x + d[X];
             int ny = y + d[Y];
 
-            if (nx < 0 || nx >= picture.length || ny < 0 || ny >= picture[0].length || picture[nx][ny] == 0) {
+            if (nx < 0 || nx >= picture.length || ny < 0 || ny >= picture[0].length) {
                 continue;
             }
-            if (picture[nx][ny] != prevColor) {
+            if (picture[nx][ny] != prevColor || picture[nx][ny] == 0) {
                 continue;
             }
 
