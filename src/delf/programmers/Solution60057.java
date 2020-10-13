@@ -24,7 +24,7 @@ public class Solution60057 {
 	private static String press(String s, int n) {
 		StringBuilder sb = new StringBuilder(); // 성능을 고려해야했다면, 쓰지 않았을 것 (숫자만 카운팅)
 		for (int i = 0; i <= s.length() - n; i += n) {
-			String target = s.substring(i, i + n); // 성능을 고려해야했지만, 쓰지 않았을 것 (캐릭터 단위로 직접비교)
+			String target = s.substring(i, i + n); // 성능을 고려해야했다면, 쓰지 않았을 것 (캐릭터 단위로 직접비교)
 			int count = 1;
 			for (int j = i + n; j <= s.length() - n; j += n) {
 				if (!target.equals(s.substring(j, j + n))) {
