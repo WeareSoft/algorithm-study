@@ -1,5 +1,14 @@
 package dami;
 
+import dami.codingtest.kakao.T1;
+import dami.codingtest.kakao.T2;
+import dami.codingtest.kakao.T3;
+import dami.leetcode.easy.Longest_Common_Prefix_14;
+import dami.programmers.level2.기능개발;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Solution {
     public static void main(String[] args) {
         solution();
@@ -18,6 +27,7 @@ public class Solution {
         //new Reverse_Integer_7().reverse(-123);
         //new Palindrome_Number_9().isPalindrome(1000000001);
         //new Roman_to_Integer_13().romanToInt("MMMCMXCIX");
+        System.out.println(new Longest_Common_Prefix_14().longestCommonPrefix(new String[]{"dog", "racecar", "car"}));
         //////////////////////////////////////////////////////////////////////////////
 
 
@@ -36,8 +46,6 @@ public class Solution {
         //new 멀쩡한_사각형().solution(100000000, 100000001);
         //new 일이사_나라의_숫자().solution(20);
         //new 기능개발().solution(new int[]{93, 30, 55}, new int[]{1, 30, 5});
-        //int[][] picture6 = new int[][] {{0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0}, {0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0}, {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0}, {0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0}, {0, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 0}, {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0}, {0, 1, 3, 3, 3, 1, 1, 1, 1, 1, 1, 3, 3, 3, 1, 0}, {0, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 0}, {0, 0, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 0, 0}, {0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0}, {0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0}};
-        //new 카카오프렌즈_컬러링북().solution(13, 16, picture6);
         //new 카카오프렌즈_컬러링북().solution(6, 4, new int[][] {{1, 1, 1, 0}, {1, 2, 2, 0}, {1, 0, 0, 1}, {0, 0, 0, 1}, {0, 0, 0, 3}, {0, 0, 0, 3}});
         //////////////////////////////////////////////////////////////////////////////
 
