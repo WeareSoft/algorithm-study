@@ -1,15 +1,5 @@
 package dami;
 
-import dami.codingtest.kakao.T1;
-import dami.codingtest.kakao.T2;
-import dami.codingtest.kakao.T3;
-import dami.leetcode.easy.Longest_Common_Prefix_14;
-import dami.programmers.level2.기능개발;
-import dami.programmers.level2.문자열_압축;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Solution {
     public static void main(String[] args) {
         solution();
@@ -48,7 +38,7 @@ public class Solution {
         //new 일이사_나라의_숫자().solution(20);
         //new 기능개발().solution(new int[]{93, 30, 55}, new int[]{1, 30, 5});
         //new 카카오프렌즈_컬러링북().solution(6, 4, new int[][] {{1, 1, 1, 0}, {1, 2, 2, 0}, {1, 0, 0, 1}, {0, 0, 0, 1}, {0, 0, 0, 3}, {0, 0, 0, 3}});
-        System.out.println(new 문자열_압축().solution("xababcdcdababcdcd"));
+        //new 문자열_압축().solution("abcabcdede");
         //////////////////////////////////////////////////////////////////////////////
 
 
