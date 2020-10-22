@@ -9,6 +9,7 @@ public class Solution60057 {
 	public static void main(String[] args) {
 //		System.out.println(new Solution60057().solution("abcabcabcabcdededededede"));
 		System.out.println(new Solution60057().solution("abcabcdede"));
+
 	}
 
 	public int solution(String s) {

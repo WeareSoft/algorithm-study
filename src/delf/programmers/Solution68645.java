@@ -15,6 +15,7 @@ public class Solution68645 {
 
 		int n = -1, m = 0;
 		int direction = 0;
+
 		for (int now = 1; now <= endNumber; ) { // 1 ~ endNumber
 			for (int i = 0; i < num; i++) { // n ~ 1
 				n += incremental[direction][0];
