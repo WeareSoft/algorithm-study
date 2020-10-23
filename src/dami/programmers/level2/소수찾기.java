@@ -2,6 +2,53 @@ package dami.programmers.level2;
 
 import java.util.*;
 
+
+// https://programmers.co.kr/learn/courses/30/lessons/42839/solution_groups?language=java&type=all
+public class 소수찾기 {
+	public int solution(String numbers) {
+		HashSet<Integer> numberSet = new HashSet<>();
+		permutation("", numbers, numberSet);
+
+		int count = 0;
+		while (numberSet.iterator().hasNext()) {
+			int number = numberSet.iterator().next();
+			numberSet.remove(number);
+
+			if (number == 2) {
+				count++;
+			}
+			if (number % 2 != 0 && isPrime(number)) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	private boolean isPrime(int n) {
+		if (n == 0 || n == 1) {
+			return false;
+		}
+		for (int i = 3; i <= (int)Math.sqrt(n); i+=2) {
+			if (n % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private void permutation(String prefix, String numbers, HashSet<Integer> numberSet) {
+		int length = numbers.length();
+
+		if (!"".equals(prefix)) {
+			numberSet.add(Integer.valueOf(prefix));
+		}
+		for (int i = 0; i < length; i++) {
+			permutation(prefix + numbers.charAt(i), numbers.substring(0, i) + numbers.substring(i+1, length), numberSet);
+		}
+	}
+}
+
+/*
 public class 소수찾기 {
 	private static final Set<Integer> combiNumbers = new HashSet<>();
 
@@ -85,3 +132,4 @@ public class 소수찾기 {
 		return true;
 	}
 }
+*/
