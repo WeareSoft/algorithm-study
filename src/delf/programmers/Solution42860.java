@@ -23,8 +23,6 @@ public class Solution42860 {
 			moveCnt += ((Math.min(arr[index] - 'A', Math.abs('Z' - arr[index] + 1))) + Math.abs(inc));
 			arr[index] = 'A';
 			index = inc >= 0 ? (index + inc) % arr.length : (index + inc +arr.length) % arr.length;
-
-			System.out.println();
 		}
 		return moveCnt;
 	}
@@ -48,7 +46,7 @@ public class Solution42860 {
 	public static void main(String[] args) {
 //		System.out.println(new Solution42860().solution("AABAAAAAAAB"));
 //		System.out.println(new Solution42860().solution("JEROEN"));
-		System.out.println(new Solution42860().solution("JAZ"));
+		System.out.println(new Solution42860().solution("AAZAAAZ"));
 
 	}
 }
