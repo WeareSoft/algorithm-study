@@ -11,7 +11,7 @@ public class Solution {
         //new Leetcode().solutions();
         //new Programmers().solutions();
         //new HackerRank().solutions();
-        new Questions().solutions();
+        //new Questions().solutions();
 
         //new CodingTest().solutions();
     }

@@ -22,6 +22,8 @@ public class Leetcode {
 		//s.updateSubrectangle(0, 0, 3, 2, 5);
 		//s.getValue(2, 2);
 		//new Partition_Labels_763().partitionLabels("befrppytljbvezqkjzkvmncnc");
+		//new Partition_Labels_763().partitionLabels("ababcbacadefegdehijhklij");
+		//new Add_Two_Numbers_2();
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
