@@ -25,6 +25,7 @@ public class Leetcode {
 		//new Partition_Labels_763().partitionLabels("ababcbacadefegdehijhklij");
 		//new Add_Two_Numbers_2();
 		//new Longest_Substring_3().lengthOfLongestSubstring("abcabcbb"); // "abcabcbb", "bbbbb", "pwwkew", " ", "dvdf", "abcb"
+		//new Group_Anagrams_49().groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
