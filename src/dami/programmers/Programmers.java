@@ -12,6 +12,8 @@ public class Programmers {
 		//new 삼각_달팽이().solution(4);
 		//new 조이스틱().solution("JEROEN");
 		//new 소수찾기().solution("1234");
+		//new 타겟_넘버().solution(new int[] {1,1,1,1,1}, 3);
+		//new 타겟_넘버().solution(new int[] {2,3,5,7,9}, 8);
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
