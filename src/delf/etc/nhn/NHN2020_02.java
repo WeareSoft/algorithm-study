@@ -1,6 +1,4 @@
-package etc;
-
-import java.util.Arrays;
+package etc.nhn;
 
 /**
  * @author delf
