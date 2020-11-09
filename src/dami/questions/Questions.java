@@ -1,5 +1,7 @@
 package dami.questions;
 
+import java.util.Arrays;
+
 public class Questions {
 	public void solutions() {
 		//new Task1().solution(6, 2, new char[] {'B', 'C'}, 2, new int[] {3, -2});
@@ -10,5 +12,16 @@ public class Questions {
 
 		//new Task3().solution(2, new String[] {"B2(RG)", "3(R2(GB))"});
 		//new Task3().solution(3, new String[] {"3(BR2(R))", "B(RGB(RG))", "1B2R3G"});
+
+		/*
+		System.out.println(Arrays.toString(new Line6().solution(
+				new String[]{"/", "/hello", "/hello/tmp", "/root", "/root/abcd", "/root/abcd/etc", "/root/abcd/hello"}
+				, new String[]{"mkdir /root/tmp", "cp /hello /root/tmp", "rm /hello"}
+		)));
+		System.out.println(Arrays.toString(new Line6().solution(
+				new String[]{"/"}
+				, new String[]{"mkdir /a", "mkdir /a/b", "mkdir /a/b/c", "cp /a/b /", "rm /a/b/c"}
+		)));
+		*/
 	}
 }
