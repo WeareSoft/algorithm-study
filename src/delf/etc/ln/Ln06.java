@@ -1,21 +1,21 @@
-package etc;
+package etc.ln;
 
 import java.util.*;
 
-public class NV01 {
+public class Ln06 {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
-		System.out.println(Arrays.toString(new NV01().solution(
+		System.out.println(Arrays.toString(new Ln06().solution(
 				new String[]{"/", "/hello", "/hello/tmp", "/root", "/root/abcd", "/root/abcd/etc", "/root/abcd/hello"},
 				new String[]{"mkdir /root/tmp", "cp /hello /root/tmp", "rm /hello"}))
 		);
 
-		System.out.println(Arrays.toString(new NV01().solution(
+		System.out.println(Arrays.toString(new Ln06().solution(
 				new String[]{"/"},
 				new String[]{"mkdir /a", "mkdir /a/b", "mkdir /a/b/c", "cp /a/b /", "rm /a/b/c"}))
 		);
 
-		System.out.println(Arrays.toString(new NV01().solution(
+		System.out.println(Arrays.toString(new Ln06().solution(
 				new String[]{"/"},
 				new String[]{"mkdir /a", "mkdir /a/b", "mkdir /a/b/c", "cp /a/b /", "rm /a/b/c"}))
 		);
