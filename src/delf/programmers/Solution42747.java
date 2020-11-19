@@ -14,11 +14,15 @@ public class Solution42747 {
 		System.out.println(new Solution42747().solution(new int[]{135, 778, 512, 923, 111, 344}));
 	}
 
+	/*
+     * 정렬된 배열 내에서는 h번째 논문은 무조건 h회 이상 인용됨
+     * '그 차이'가 가장 적어질 때가 정답
+	 * */
 	public int solution(int[] citations) {
 		int[] arr = Arrays.stream(citations).boxed().sorted(Comparator.reverseOrder()).mapToInt(i -> i).toArray();
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] <= i) {
-				return i;
+		for (int h = 0; h < arr.length; h++) {
+			if (arr[h] <= h) {
+				return h;
 			}
 		}
 		return citations.length;
