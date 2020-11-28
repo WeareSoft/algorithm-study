@@ -10,44 +10,57 @@ public class Solution68936 {
 
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(new Solution68936().solution(new int[][]{{1, 1, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {1, 1, 1, 1}})));
+		System.out.println(Arrays.toString(new Solution68936().solution(new int[][]{{1, 1, 1, 1, 1, 1, 1, 1}, {0, 1, 1, 1, 1, 1, 1, 1}, {0, 0, 0, 0, 1, 1, 1, 1}, {0, 1, 0, 0, 1, 1, 1, 1}, {0, 0, 0, 0, 0, 0, 1, 1}, {0, 0, 0, 0, 0, 0, 0, 1}, {0, 0, 0, 0, 1, 0, 0, 1}, {0, 0, 0, 0, 1, 1, 1, 1}})));
+
 	}
 
 	public int[] solution(int[][] arr) {
-		int size = (int) Math.sqrt(arr.length);
-		int[] result = new int[]{0, 0};
-		count(arr, size, 0, 0, result);
-		return result;
+		int[] answer = new int[]{0, 0};
+		count(arr, arr.length, 0, 0, answer);
+		return answer;
 	}
 
-	private void count(int[][] arr, int size, int x, int y, int[] result) {
-		for (int i = 0; i < 2; i++) {
-			for (int j = 0; j < 2; j++) {
-				int cursor = (int) Math.pow(2, size - 1);
-				int nx = x + i * cursor;
-				int ny = y + j * cursor;
-				if (size == 0) {
-					result[arr[nx][ny]]++;
-				} else {
-					count(arr, size / 2, nx, ny, result);
-				}
-			}
-		}
-	}
+	private int[] count(int[][] arr, int size, int startRow, int startCol, int[] answer) {
+		int[] count = new int[]{0, 0}; // 이번 범위의 배열에서의 숫자 카운터
 
-	/*private int[] count1(int[][] arr, int size, int x, int y, int[] result) {
-		if (size == 0) {
-			int[] tmp = new int[]{0, 0};
+		if (size == 2) { // 최소 단위(2*2)일 때,
 			for (int i = 0; i < 2; i++) {
 				for (int j = 0; j < 2; j++) {
-					tmp[arr[x + i][y + j]]++;
+					count[arr[startCol + j][startRow + i]]++; // 각 위치에서 카운팅
 				}
 			}
-			tmp[0] = tmp[0] == 4 ? 1 : tmp[0];
-			tmp[1] = tmp[1] == 4 ? 1 : tmp[1];
-
-			return tmp;
+			answer[0] += count[0]; // 결과 배열에 추가
+			answer[1] += count[1];
+		} else { // 최소 단위가 아닐 때,
+			for (int i = 0; i < 2; i++) {
+				for (int j = 0; j < 2; j++) {
+					int nextSize = size / 2;
+					int nextCol = startCol + (j * nextSize);
+					int nextRow = startRow + (i * nextSize);
+					int[] tmp = count(arr, nextSize, nextCol, nextRow, answer); // 배열을 4개로 분할해서 카운팅
+					count[0] += tmp[0]; // 4분할한 카운팅 합치기
+					count[1] += tmp[1];
+				}
+			}
 		}
 
-		int[] tmp = count1(arr, size/2, )
-	}*/
+		/* 중복 보정 */
+		if (count[1] == 0) { // 배열 내 모든 요소가 '0'이면 ('1'이 없으면)
+			answer[0] -= 3; // '0'의 카운트 -3
+		}
+		if (count[0] == 0) { // 이하 동문 ('1'인 경우)
+			answer[1] -= 3;
+		}
+
+		return count;
+	}
+
+	private int[] checkCount(int[] answer) {
+		if (answer[0] == 4) {
+			answer[0] = 1;
+		} else if (answer[1] == 4) {
+			answer[1] = 1;
+		}
+		return answer;
+	}
 }
