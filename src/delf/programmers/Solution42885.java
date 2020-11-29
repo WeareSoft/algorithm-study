@@ -1,7 +1,11 @@
 package programmers;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
- * @author delf
+ * 구명보트
+ * https://programmers.co.kr/learn/courses/30/lessons/42885
  */
 public class Solution42885 {
 	public static void main(String[] args) {
@@ -9,33 +13,23 @@ public class Solution42885 {
 	}
 
 	public int solution(int[] people, int limit) {
-		int answer = Integer.MAX_VALUE;
+		int answer = 0;
 
+		Arrays.sort(people);
+		System.out.println(Arrays.toString(people));
+		int left = 0;
+		int right = people.length - 1;
 
-		for (int adj = 0; adj < people.length; adj++) {
-			int count = 0;
-			boolean[] isCrossed = new boolean[people.length];
-			for (int p1 = 0; p1 < people.length; p1++) {
-				int adjP1 = (p1 + adj) % people.length;
-				if (isCrossed[adjP1]) {
-					continue;
-				}
-				isCrossed[adjP1] = true;
-				count++;
-				for (int p2 = p1 + 1; p2 < people.length; p2++) {
-					int adjP2 = (p2 + adj) % people.length;
-					if (isCrossed[adjP2] || adjP1 == adjP2) {
-						continue;
-					}
-					if (people[adjP1] + people[adjP2] <= limit) {
-						isCrossed[adjP2] = true;
-						break;
-					}
-				}
+		while (left <= right) {
+			int weight = people[left] + people[right];
+			if (weight > limit) {
+				right--;
+			} else {
+				left++;
+				right--;
 			}
-			answer = Math.min(answer, count);
+			answer++;
 		}
-
 		return answer;
 	}
 }
