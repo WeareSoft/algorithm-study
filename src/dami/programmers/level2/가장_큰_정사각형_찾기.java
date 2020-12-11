@@ -2,6 +2,7 @@ package dami.programmers.level2;
 
 import java.util.Arrays;
 
+// https://programmers.co.kr/learn/courses/30/lessons/12905
 public class 가장_큰_정사각형_찾기 {
 	public int solution(int [][]board) {
 		int max = Arrays.stream(board[0]).anyMatch(value -> value == 1) ? 1 : 0;
