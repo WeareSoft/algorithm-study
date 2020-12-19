@@ -36,4 +36,3 @@ public class Solution64065 {
 
 		return result;
 	}
-}
