@@ -1,7 +1,7 @@
 package dami.leetcode.medium;
 
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-
+// 다른 코드 : https://leetcode.com/submissions/detail/431959305/
 /**
  * Definition for singly-linked list.
  * public class ListNode {

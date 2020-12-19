@@ -27,6 +27,7 @@ public class Leetcode {
 		//new Group_Anagrams_49().groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
 		//new Container_With_Most_Water_11().maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
 		//new Letter_Combinations_17().letterCombinations("234");
+		//new Generate_Parentheses_22().generateParenthesis(3);
 		//new Remove_Nth_Node_19().removeNthFromEnd(new ListNode(), 1);
 		//////////////////////////////////////////////////////////////////////////////
 	}
