@@ -1,5 +1,7 @@
 package programmers;
 
+import java.util.Stack;
+
 /**
  * 짝지어 제거하기
  * https://programmers.co.kr/learn/courses/30/lessons/12973
@@ -11,27 +13,21 @@ public class Solution12973 {
 	}
 
 	public int solution(String s) {
-		int answer = 0;
-		int flagIdx = 0;
-
-		int cur = 1;
-		int gap = 0;
-		do {
-			if (s.charAt(flagIdx) != s.charAt(cur)) {
-				flagIdx += (gap + 1);
-				gap = 0;
-			} else {
-				if (gap == 0) {
-					flagIdx--;
-				} else {
-					flagIdx += (gap + 1);
-				}
-				gap += 2;
-				answer++;
+		Stack<Character> stack = new Stack<>();
+		for (char ch : s.toCharArray()) {
+			if (stack.isEmpty()) {
+				stack.push(ch);
+				continue;
 			}
-			cur++;
-		} while (flagIdx < s.length() - 1);
 
-		return answer;
+			if (stack.peek() == ch) {
+				stack.pop();
+				continue;
+			}
+
+			stack.push(ch);
+		}
+
+		return stack.isEmpty() ? 1 : 0;
 	}
 }
