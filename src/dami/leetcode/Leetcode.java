@@ -29,6 +29,7 @@ public class Leetcode {
 		//new Letter_Combinations_17().letterCombinations("234");
 		//new Generate_Parentheses_22().generateParenthesis(3);
 		//new Remove_Nth_Node_19().removeNthFromEnd(new ListNode(), 1);
+		//new Permutations_46().permute(new int[] {1,2,3});
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
