@@ -30,6 +30,8 @@ public class Leetcode {
 		//new Generate_Parentheses_22().generateParenthesis(3);
 		//new Remove_Nth_Node_19().removeNthFromEnd(new ListNode(), 1);
 		//new Permutations_46().permute(new int[] {1,2,3});
+		//new Combination_Sum_39().combinationSum(new int[] {2,3,5}, 8);
+		//new Queue_Reconstruction_406().reconstructQueue(new int[][]{{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}});
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
