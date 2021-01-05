@@ -23,6 +23,9 @@ public class Programmers {
 		//new 이진_변환_반복하기().solution("01110");
 		//new 압축().solution("ABABABABABABABAB");
 		//new 최솟값_만들기().solution(new int[] {1, 4, 2}, new int[] {5, 4, 4});
+		//System.out.println(new 방금그곡().solution("ABCDEFG", new String[]{"13:50,14:05,HELLO,CDEFGAB", "13:00,13:30,WORLD,CDEFGAB"}));
+		//System.out.println(new 방금그곡().solution("A#", new String[]{"13:00,13:02,HAPPY,D#A#"}));
+		//System.out.println(new 방금그곡().solution("C", new String[]{"13:00,13:02,HAPPY,D#A#C"}));
 		//////////////////////////////////////////////////////////////////////////////
 
 		//////////////////////////////////////////////////////////////////////////////
