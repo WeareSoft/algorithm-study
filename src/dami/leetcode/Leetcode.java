@@ -32,6 +32,7 @@ public class Leetcode {
 		//new Permutations_46().permute(new int[] {1,2,3});
 		//new Combination_Sum_39().combinationSum(new int[] {2,3,5}, 8);
 		//new Queue_Reconstruction_406().reconstructQueue(new int[][]{{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}});
+		//new Counting_Bits_338().countBits(5);
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
