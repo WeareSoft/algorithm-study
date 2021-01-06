@@ -10,6 +10,9 @@ import java.util.Map;
 // C# D# F# G# A#
 // 재생 시간이 악보 길이보다 짧을 경우 고려하기 (m이 악보의 끝부분과 일치할 때)
 // #음은 한 개 음으로 취급하기
+// 입력값 〉	"GABC", ["12:00,12:05,HELLO,CDEFGAB", "13:00,13:03,WORLD,ABCDEF"]
+// 기댓값 〉	"HELLO"
+// 결과값 >  "(None)"
 public class 방금그곡 {
 	private static final Map<String, String> sharp;
 
