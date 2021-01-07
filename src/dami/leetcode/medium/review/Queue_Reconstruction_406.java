@@ -1,4 +1,4 @@
-package dami.leetcode.medium;
+package dami.leetcode.medium.review;
 
 import java.util.*;
 
