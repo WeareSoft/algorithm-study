@@ -5,7 +5,7 @@ public class HackerRank {
 		//////////////////////////////////////////////////////////////////////////////
 		/*                              hacker rank                                 */
 		//new The_Time_in_Words().timeInWords(12, 50);
-		//new Highest_Value_Palindrome().highestValuePalindrome("092282", 6, 3);
+		//new Highest_Value_Palindrome().highestValuePalindrome("12321", 5, 3);
 		//new Sherlock_and_the_Valid_String().isValid("aabbcd");
 		//////////////////////////////////////////////////////////////////////////////
 	}
