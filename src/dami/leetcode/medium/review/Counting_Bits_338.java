@@ -1,4 +1,4 @@
-package dami.leetcode.medium;
+package dami.leetcode.medium.review;
 
 // https://leetcode.com/problems/counting-bits/
 public class Counting_Bits_338 {
