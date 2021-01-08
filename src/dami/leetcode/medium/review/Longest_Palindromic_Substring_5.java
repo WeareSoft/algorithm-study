@@ -7,18 +7,24 @@ public class Longest_Palindromic_Substring_5 {
 	public String longestPalindrome(String s) {
 		String result = "";
 		for (int i = 0; i < s.length(); i++) {
-			String s1 = extend(s, i, i);            // 홀수인 경우 현재위치 한자리 기준
-			String s2 = extend(s, i, i + 1);     // 짝수인 경우 현재 위치와 다음 위치 두 자리 기준
-
-			if (s1.length() > result.length()) result = s1;
-			if (s2.length() > result.length()) result = s2;
+			String odd = compareLeftRight(s, i, i);
+			String even = compareLeftRight(s, i, i + 1);
+			if (odd.length() > result.length()) {
+				result = odd;
+			}
+			if (even.length() > result.length()) {
+				result = even;
+			}
 		}
+
 		return result;
 	}
 
-	private String extend(String s, int i, int j) {
-		for (; 0 <= i && j < s.length(); i--, j++) {
-			if (s.charAt(i) != s.charAt(j)) break;
+	public String compareLeftRight(String s, int i, int j) {
+		for (; i <= 0 && j < s.length(); i--, j++) {
+			if (s.charAt(i) != s.charAt(j)) {
+				break;
+			}
 		}
 		return s.substring(i + 1, j);
 	}
