@@ -25,6 +25,7 @@ public class Programmers {
 		//new 최솟값_만들기().solution(new int[] {1, 4, 2}, new int[] {5, 4, 4});
 		//new 방금그곡().solution("ABCDEFG", new String[]{"13:50,14:05,HELLO,CDEFGAB", "13:00,13:30,WORLD,CDEFGAB"}));
 		//new 오픈채팅방().solution(new String[]{"Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"});
+		//new 뉴스_클러스터링().solution("FRANCE", "french");
 		//////////////////////////////////////////////////////////////////////////////
 
 		//////////////////////////////////////////////////////////////////////////////
