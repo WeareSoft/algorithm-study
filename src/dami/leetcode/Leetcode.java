@@ -35,6 +35,7 @@ public class Leetcode {
 		//new Counting_Bits_338().countBits(5);
 		//new Longest_Palindromic_Substring_5().longestPalindrome("abcdccbc");
 		//new Binary_Tree_Inorder_94().inorderTraversal(null);
+		//new Subsets_78().subsets(new int[] {1, 2, 3});
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
