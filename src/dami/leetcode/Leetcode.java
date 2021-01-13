@@ -36,6 +36,7 @@ public class Leetcode {
 		//new Longest_Palindromic_Substring_5().longestPalindrome("abcdccbc");
 		//new Binary_Tree_Inorder_94().inorderTraversal(null);
 		//new Subsets_78().subsets(new int[] {1, 2, 3});
+		//new Daily_Temperatures_739().dailyTemperatures(new int[] {73, 74, 75, 71, 69, 72, 76, 73});
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }
