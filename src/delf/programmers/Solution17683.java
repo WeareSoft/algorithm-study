@@ -21,7 +21,7 @@ public class Solution17683 {
 	}
 
 	public String solution(String m, String[] musicinfos) {
-//		Map<String, String> playInfo = new LinkedHashMap<>();
+//		Map<Stringig, String> playInfo = new LinkedHashMap<>();
 		List<String> titles = new ArrayList<>();
 		List<String> melodys = new ArrayList<>();
 		for (String musicinfo : musicinfos) {
