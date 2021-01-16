@@ -7,7 +7,7 @@ public class Array3 {
 	public int[] solution(int[] numbers, int target) {
 		//return iteration(numbers, target);
 		//return useHashMap(numbers, target);
-		return threeSum(new int[] {2, 3, 4, 7, 8, 9}, 12);
+		return threeSum(numbers, target);
 	}
 
 	// 시간 : O(n^2), 공간 : O(1)
@@ -37,6 +37,7 @@ public class Array3 {
 		return null;
 	}
 
+	// 시간 : O(n^2), 공간 : O(n)
 	private int[] threeSum(int[] numbers, int target) {
 		Map<Integer, Integer> indexMap = new HashMap<>();
 		for (int i = 0; i < numbers.length; i++) {
