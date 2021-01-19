@@ -1,5 +1,9 @@
 package dami.programmers;
 
+import dami.programmers.level2.파일명_정렬;
+
+import java.util.Arrays;
+
 public class Programmers {
 	public void solutions() {
 		//////////////////////////////////////////////////////////////////////////////
@@ -30,6 +34,8 @@ public class Programmers {
 		//new 프렌즈4블록().solution(6, 6, new String[]{"AABBEE", "AAAEEE", "VAAEEV", "AABBEE", "AACCEE", "VVCCEE"});
 		//new 캐시().solution(3, new String[]{"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"});
 		//new 캐시().solution(2, new String[]{"Jeju", "Pangyo", "NewYork", "newyork"});
+		//System.out.println(Arrays.toString(new 파일명_정렬().solution(new String[]{"img00000", "a099", "img0.png", "img1.png", "IMG01.GIF", "img2.JPG"})));
+		//System.out.println(Arrays.toString(new 파일명_정렬().solution(new String[]{"img000045123.", "img.1-.1.1.b.png","img2","IMG02"})));
 		//////////////////////////////////////////////////////////////////////////////
 
 		//////////////////////////////////////////////////////////////////////////////
