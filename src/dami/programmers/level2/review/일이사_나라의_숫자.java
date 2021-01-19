@@ -1,4 +1,4 @@
-package dami.programmers.level2;
+package dami.programmers.level2.review;
 
 // ** 이해 제대로 못함
 // 나머지 0일 때 왜 몫에서 1 빼야 하는건지? 나머지, 124나라 값이랑 몫 규칙순서 맞출라고??
