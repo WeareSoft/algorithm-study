@@ -28,6 +28,8 @@ public class Programmers {
 		//new 뉴스_클러스터링().solution("FRANCE", "french");
 		//new 프렌즈4블록().solution(4, 5, new String[]{"CCBDE", "AAADE", "AAABF", "CCBBF"});
 		//new 프렌즈4블록().solution(6, 6, new String[]{"AABBEE", "AAAEEE", "VAAEEV", "AABBEE", "AACCEE", "VVCCEE"});
+		//new 캐시().solution(3, new String[]{"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"});
+		//new 캐시().solution(2, new String[]{"Jeju", "Pangyo", "NewYork", "newyork"});
 		//////////////////////////////////////////////////////////////////////////////
 
 		//////////////////////////////////////////////////////////////////////////////
