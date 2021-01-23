@@ -40,6 +40,9 @@ public class 파일명_정렬 {
 				.toArray(String[]::new);
 	}
 
+	// 1. 숫자부분 Math.min(문자열 길이, 5)자리까지 자르기
+	// 2. 숫자 정규식으로 문자 목록 분리한 String 배열 크기가 1인 경우 (img000, img0000000) 그대로 반환
+	// 3. 배열 크기가 2 이상인 경우 문자 정규식으로 숫자 목록 분리한 배열의 첫번째 값 반환
 	private Integer splitNumber(String file, String[] split) {
 		String numberString = file.substring(split[0].length(), Math.min(file.length(), MAX_NUMBER_SIZE + split[0].length()));
 		if (split.length < 2) {
@@ -50,3 +53,105 @@ public class 파일명_정렬 {
 	}
 
 }
+
+
+/* // 다른 풀이. Matcher 클래스 활용
+
+class Solution {
+  public String[] solution(String[] files) {
+        List<FileName> fileNameList = new ArrayList<>();
+        String head, number, tail;
+
+        for (int i = 0; i < files.length; i++) {
+            String s = files[i];
+            Pattern p = Pattern.compile("[0-9]+");
+            Matcher m = p.matcher(s);
+            if (m.find()){
+                number = m.group();
+                int numberStartIndex = s.indexOf(number);
+                head = s.substring(0, numberStartIndex);
+                int numberEndIndex = numberStartIndex + number.length() - 1;
+                if (numberEndIndex + 1 > s.length() - 1) {
+                    tail = "";
+                } else {
+                    tail = s.substring(numberEndIndex + 1);
+                }
+                fileNameList.add(new FileName(head, number, tail));
+            }
+        }
+
+        fileNameList.sort(Comparator.comparing(FileName::getHead).thenComparing(Comparator.naturalOrder()));
+
+        String[] answer = new String[files.length];
+        for (int i = 0; i < files.length; i++) {
+            answer[i] = fileNameList.get(i).toString();
+        }
+        return answer;
+    }
+
+    public static class FileName implements Comparable<FileName> {
+        String head;
+        String number;
+        String tail;
+
+        public FileName(String head, String number, String tail) {
+            this.head = head;
+            this.number = number;
+            this.tail = tail;
+        }
+
+        public String getHead() {
+            return head.toUpperCase();
+        }
+
+        @Override
+        public String toString() {
+            return head + number + tail;
+        }
+
+        @Override
+        public int compareTo(FileName o) {
+            int mine = Integer.parseInt(this.number);
+            int yours = Integer.parseInt(o.number);
+            return mine - yours;
+        }
+    }
+}
+
+*/
+
+
+/*  // 다른 풀이
+
+class Solution {
+  public String[] solution(String[] files) {
+      Arrays.sort(files, new StrCmp());
+      return files;
+  }
+  private class StrCmp implements Comparator<String> {
+      @Override
+      public int compare(String s1, String s2) {
+          s1 = s1.toLowerCase();
+          s2 = s2.toLowerCase();
+
+          // 문자열 비교
+          int i = 0;
+          int j = 0;
+          while (i < s1.length() && !Character.isDigit(s1.charAt(i))) ++i;
+          while (j < s2.length() && !Character.isDigit(s2.charAt(j))) ++j;
+          int cmp1 = s1.substring(0, i).compareTo(s2.substring(0, j));
+          if (cmp1 != 0) return cmp1;
+
+          // 숫자 비교
+          int startI = i;
+          int startJ = j;
+          while (i < s1.length() && Character.isDigit(s1.charAt(i))) ++i;
+          while (j < s2.length() && Character.isDigit(s2.charAt(j))) ++j;
+          int num1 = Integer.parseInt(s1.substring(startI, i));
+          int num2 = Integer.parseInt(s2.substring(startJ, j));
+          return num1 - num2;
+      }
+  }
+}
+
+*/
