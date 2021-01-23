@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
 public class 파일명_정렬 {
 	private static final int MAX_NUMBER_SIZE = 5;
 	private static final String NUMBER = Pattern.compile("[0-9]{1,5}").pattern();
+	private static final String CHARACTER = Pattern.compile("[\\sa-z.-]").pattern();
 
 	public String[] solution(String[] files) {
 		Map<String, String> headMap = new LinkedHashMap<>();
@@ -39,13 +40,13 @@ public class 파일명_정렬 {
 				.toArray(String[]::new);
 	}
 
-	// img00000인 경우
-	// img0000.123.233인 경우
-	// img00000213.23인 경우
 	private Integer splitNumber(String file, String[] split) {
-		String result = file.replace(split[0], "")
-				.substring(0, (split.length < 2 || split[1].equals("") ? file.lastIndexOf("") : file.indexOf(split[1])) - split[0].length());
-		return Integer.parseInt(result.length() > MAX_NUMBER_SIZE ? result.substring(0, MAX_NUMBER_SIZE) : result);
+		String numberString = file.substring(split[0].length(), Math.min(file.length(), MAX_NUMBER_SIZE + split[0].length()));
+		if (split.length < 2) {
+			return Integer.parseInt(numberString);
+		}
+
+		return Integer.parseInt(numberString.split(CHARACTER)[0]);
 	}
 
 }
