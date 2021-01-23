@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Array3 {
-	public int[] solution(int[] numbers, int target) {
+	public int[] twoSum(int[] numbers, int target) {
 		//return iteration(numbers, target);
 		//return useHashMap(numbers, target);
 		return threeSum(numbers, target);

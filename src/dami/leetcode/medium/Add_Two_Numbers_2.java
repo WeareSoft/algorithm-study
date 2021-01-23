@@ -1,5 +1,7 @@
 package dami.leetcode.medium;
 
+import dami.leetcode.common.ListNode;
+
 public class Add_Two_Numbers_2 {
 	public Add_Two_Numbers_2() {
 		// TestCase 1
@@ -47,21 +49,5 @@ public class Add_Two_Numbers_2 {
 		}
 
 		return result;
-	}
-}
-
-class ListNode {
-	int val;
-	ListNode next;
-
-	ListNode() { }
-
-	ListNode(int val) {
-		this.val = val;
-	}
-
-	ListNode(int val, ListNode next) {
-		this.val = val;
-		this.next = next;
 	}
 }

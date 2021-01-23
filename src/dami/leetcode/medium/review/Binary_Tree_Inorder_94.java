@@ -1,5 +1,7 @@
 package dami.leetcode.medium.review;
 
+import dami.leetcode.common.TreeNode;
+
 import java.util.*;
 
 // https://leetcode.com/problems/binary-tree-inorder-traversal/
@@ -42,17 +44,4 @@ public class Binary_Tree_Inorder_94 {
 		}
 	}
 
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
 }
