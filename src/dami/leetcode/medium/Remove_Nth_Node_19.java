@@ -1,17 +1,10 @@
 package dami.leetcode.medium;
 
+import dami.leetcode.common.ListNode;
+
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 // 다른 코드 : https://leetcode.com/submissions/detail/431959305/
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+
 public class Remove_Nth_Node_19 {
 	public ListNode removeNthFromEnd(ListNode head, int n) {
 		// head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
