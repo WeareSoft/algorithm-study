@@ -38,7 +38,10 @@ public class Leetcode {
 		//new Subsets_78().subsets(new int[] {1, 2, 3});
 		//new Daily_Temperatures_739().dailyTemperatures(new int[] {73, 74, 75, 71, 69, 72, 76, 73});
 		//new Top_K_Frequent_Elements_347().topKFrequent(new int[] {1,1,1,2,2,3,5}, 2);
-		//new Three_Sum_15().threeSum(new int[]{-1, 0, 1, 2, -1, -4});
+		//new Kth_Smallest_Element_230().kthSmallest(new TreeNode(3, new TreeNode(2), new TreeNode(4, null, new TreeNode(7))), 1);
 		//////////////////////////////////////////////////////////////////////////////
+
+
+		//new Three_Sum_15().threeSum(new int[]{-1, 0, 1, 2, -1, -4});
 	}
 }
