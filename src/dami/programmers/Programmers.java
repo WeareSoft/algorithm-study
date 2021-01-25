@@ -26,6 +26,12 @@ public class Programmers {
 		//new 방금그곡().solution("ABCDEFG", new String[]{"13:50,14:05,HELLO,CDEFGAB", "13:00,13:30,WORLD,CDEFGAB"}));
 		//new 오픈채팅방().solution(new String[]{"Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"});
 		//new 뉴스_클러스터링().solution("FRANCE", "french");
+		//new 프렌즈4블록().solution(4, 5, new String[]{"CCBDE", "AAADE", "AAABF", "CCBBF"});
+		//new 프렌즈4블록().solution(6, 6, new String[]{"AABBEE", "AAAEEE", "VAAEEV", "AABBEE", "AACCEE", "VVCCEE"});
+		//new 캐시().solution(3, new String[]{"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"});
+		//new 캐시().solution(2, new String[]{"Jeju", "Pangyo", "NewYork", "newyork"});
+		//new 파일명_정렬().solution(new String[]{"img00000", "a099", "img0.png", "img1.png", "IMG01.GIF", "img2.JPG"});
+		//new 파일명_정렬().solution(new String[]{"img000045123.", "img.1-.1.1.b.png", "img2", "IMG02"});
 		//////////////////////////////////////////////////////////////////////////////
 
 		//////////////////////////////////////////////////////////////////////////////
