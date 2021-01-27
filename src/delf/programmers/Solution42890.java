@@ -3,52 +3,65 @@ package programmers;
 import java.util.*;
 
 public class Solution42890 {
-    public int solution(String[][] relation) {
-        candidates = new ArrayList<>();
-
-        select(0, new HashSet<>(), relation);
-        return candidates.size();
+    public static void main(String[] args) {
+        System.out.println(new Solution42890().solution(new String[][]{{"100", "ryan", "music", "2"}, {"200", "apeach", "math", "2"}, {"300", "tube", "computer", "3"}, {"400", "con", "computer", "4"}, {"500", "muzi", "music", "3"}, {"600", "apeach", "music", "2"}}));
     }
 
-    static ArrayList<HashSet<Integer>> candidates;
+    private List<Set<Integer>> candidate = new ArrayList<>();
 
-    static void select(int pos, HashSet<Integer> selects, String[][] relation) {
+    public int solution(String[][] relation) {
+        boolean[] isVisit = new boolean[relation[0].length];
+        dfs(0, isVisit, relation);
+        return candidate.size();
+    }
 
-        if (pos == relation[0].length) {
-
-            for (HashSet<Integer> candidate : candidates) {
-                if (selects.containsAll(candidate)) {
-                    return;
-                }
+    private void dfs(int index, boolean[] isVisit, String[][] relation) {
+        if (isVisit.length == index) { // 조건 만족
+            Set<Integer> subset = getSubset(isVisit);
+            if (!subset.isEmpty() && isMinimal(subset) && isUnique(isVisit, relation)) {
+                candidate.add(subset);
             }
-
-            HashSet<String> sets = new HashSet<String>();
-            for (String[] strings : relation) {
-                StringBuilder temp = new StringBuilder();
-                for (int col : selects) {
-                    temp.append(strings[col]).append(",");
-                }
-                if (sets.contains(temp.toString())) {
-                    return;
-                }
-                sets.add(temp.toString());
-            }
-
-            candidates.add(selects);
             return;
         }
 
-        HashSet<Integer> copy = new HashSet<>();
-        HashSet<Integer> copy2 = new HashSet<>();
-        for (Integer val : selects) {
-            copy.add(val);
-            copy2.add(val);
+        isVisit[index] = false; // 자신 포함 X
+        dfs(index + 1, isVisit, relation);
+        isVisit[index] = true; // 자신 포함 O
+        dfs(index + 1, isVisit, relation);
+    }
+
+    private boolean isMinimal(Set<Integer> set) {
+        for (Set<Integer> c : candidate) {
+            if (set.containsAll(c)) {
+                return false;
+            }
         }
+        return true;
+    }
 
-        select(pos + 1, copy2, relation);
-        copy.add(pos);
-        select(pos + 1, copy, relation);
+    private boolean isUnique(boolean[] isVisit, String[][] relation) {
+        Set<String> dupChecker = new HashSet<>();
+        for (String[] col : relation) {
+            StringBuilder tmp = new StringBuilder();
+            for (int j = 0; j < isVisit.length; j++) {
+                if (isVisit[j]) {
+                    tmp.append(col[j]);
+                }
+            }
+            if (!tmp.toString().equals("") && !dupChecker.add(tmp.toString())) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-
+    private Set<Integer> getSubset(boolean[] isVisit) {
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < isVisit.length; i++) {
+            if (isVisit[i]) {
+                set.add(i);
+            }
+        }
+        return set;
     }
 }
