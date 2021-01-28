@@ -1,7 +1,10 @@
 package programmers;
 
 import java.util.*;
-
+/**
+ * 후보키
+ * https://programmers.co.kr/learn/courses/30/lessons/42890
+ * */
 public class Solution42890 {
     public static void main(String[] args) {
         System.out.println(new Solution42890().solution(new String[][]{{"100", "ryan", "music", "2"}, {"200", "apeach", "math", "2"}, {"300", "tube", "computer", "3"}, {"400", "con", "computer", "4"}, {"500", "muzi", "music", "3"}, {"600", "apeach", "music", "2"}}));
