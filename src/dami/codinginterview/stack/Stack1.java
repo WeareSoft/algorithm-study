@@ -4,7 +4,9 @@ import java.util.Stack;
 
 public class Stack1 {
 	public Stack<Integer> reverse(Stack<Integer> stack) {
-		return mySolution1(stack);
+		//return mySolution1(stack);
+		solution(stack);
+		return stack;
 	}
 
 	// 시간 : O(n)
@@ -33,7 +35,27 @@ public class Stack1 {
 		return reversed;
 	}
 
-	private Stack<Integer> solution(Stack<Integer> stack) {
-		return null;
+	// 다른 자료구조를 사용하지 않고 재귀적으로 Stack만 사용
+	// 시간 : O(n^2)
+	// 공간 : O(n), 메모리를 계속 잡고 있지 않기 때문에 n
+	private void solution(Stack<Integer> stack) {
+		if (stack.isEmpty()) {
+			return;
+		}
+
+		int value = stack.pop();
+		solution(stack);
+		insertAtBottom(stack, value);
+	}
+
+	private void insertAtBottom(Stack<Integer> stack, int number) {
+		if (stack.isEmpty()) {
+			stack.push(number);
+			return;
+		}
+
+		int value = stack.pop();
+		insertAtBottom(stack, number);
+		stack.push(value);
 	}
 }

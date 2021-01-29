@@ -2,6 +2,8 @@ package dami.codinginterview;
 
 import dami.codinginterview.list.ListNode;
 
+import java.util.Stack;
+
 public class Interview {
 	public void solutions() {
 		//new Array3().twoSum(new int[] {2, 3, 4, 7, 8, 9}, 12);
@@ -12,7 +14,7 @@ public class Interview {
 		//new List3().distinct(new ListNode(2, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(4)))))));
 		//new List4().circleOrNot(circleNode());
 
-		//new Stack1().reverse(stack);
+		//new Stack1().reverse(stack());
 	}
 
 	private ListNode circleNode() {
@@ -22,5 +24,13 @@ public class Interview {
 		node.add(new ListNode(4, new ListNode(5)));
 		node.add(three);
 		return node;
+	}
+
+	private Stack<Integer> stack() {
+		Stack<Integer> stack = new Stack<>();
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+		return stack;
 	}
 }
