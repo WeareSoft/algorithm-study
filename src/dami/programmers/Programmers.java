@@ -32,6 +32,8 @@ public class Programmers {
 		//new 캐시().solution(2, new String[]{"Jeju", "Pangyo", "NewYork", "newyork"});
 		//new 파일명_정렬().solution(new String[]{"img00000", "a099", "img0.png", "img1.png", "IMG01.GIF", "img2.JPG"});
 		//new 파일명_정렬().solution(new String[]{"img000045123.", "img.1-.1.1.b.png", "img2", "IMG02"});
+		//new 점프와_순간_이동().solution(1);
+		//new 예상_대진표().solution(16, 8, 9);
 		//////////////////////////////////////////////////////////////////////////////
 
 		//////////////////////////////////////////////////////////////////////////////
