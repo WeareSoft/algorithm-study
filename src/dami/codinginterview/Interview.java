@@ -15,6 +15,10 @@ public class Interview {
 		//new List4().circleOrNot(circleNode());
 
 		//new Stack1().reverse(stack());
+		//new Stack2().isPair("[{1+2*(2+2)}-[1-3)]");
+		//new Stack2().isPair("())))");
+		//new Stack3().calculatePostfix("123+-5*");
+		//new Stack4().span(new int[] {5,3,2,6,7,1,4});
 	}
 
 	private ListNode circleNode() {
