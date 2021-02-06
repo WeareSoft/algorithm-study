@@ -28,6 +28,8 @@ public class Stack2 {
 		return stack.isEmpty();
 	}
 
+	// 시간 : O(n)
+	// 공간 : O(n)
 	private boolean solution(String expression) {
 		List<Character> openingBrackets = Arrays.asList('[', '{', '(');
 		List<Character> closingBrackets = Arrays.asList(']', '}', ')');

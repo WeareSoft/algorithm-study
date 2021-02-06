@@ -3,6 +3,7 @@ package dami.leetcode.medium;
 import java.util.Stack;
 
 // https://leetcode.com/problems/daily-temperatures/
+// 스팬 문제
 public class Daily_Temperatures_739 {
 	// 시간복잡도 O(nlogn), 실행시간 : 15ms / 메모리 : 47.4MB
 	public int[] dailyTemperatures(int[] T) {

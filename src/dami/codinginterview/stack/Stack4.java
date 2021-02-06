@@ -1,5 +1,7 @@
 package dami.codinginterview.stack;
 
+import java.util.Stack;
+
 public class Stack4 {
 	public int[] span(int[] prices) {
 		return mySolution1(prices);
@@ -32,8 +34,28 @@ public class Stack4 {
 		return result;
 	}
 
-	// 스택을 어떻게 활용해야하남..
+	//         5 3 2 4 7 1
+	// index : 0 1 2 3 4 5
+	// span  : 1
+	// 스택에 index를 넣는 것
+	// 현재 값 > 스택 peek한 index의 값이면 span 값 계산 후 현재 값 push
+	// 아니면 index의 값일 클 때까지 pop하고 span 값 계산 후 현재 값 push
+	// span 값은 현재 인덱스 - 스택 peek 인덱스
 	private int[] solution(int[] prices) {
-		return null;
+		int[] result = new int[prices.length];
+		Stack<Integer> indexes = new Stack<>();
+		indexes.push(0);
+		result[0] = 1;
+
+		for (int i = 1; i < prices.length; i++) {
+			while (!indexes.isEmpty() && prices[i] >= prices[indexes.peek()]) {
+				indexes.pop();
+			}
+
+			result[i] = indexes.isEmpty() ? i + 1 : i - indexes.peek();
+			indexes.push(i);
+		}
+
+		return result;
 	}
 }
