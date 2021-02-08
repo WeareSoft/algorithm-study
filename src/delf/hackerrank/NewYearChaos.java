@@ -1,6 +1,4 @@
-package hackerank;
-
-import java.util.Arrays;
+package hackerrank;
 
 /* New Year Chaos
  * https://www.hackerrank.com/challenges/new-year-chaos
