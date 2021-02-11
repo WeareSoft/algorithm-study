@@ -1,4 +1,4 @@
-package dami.codility.lesson3.review;
+package dami.codility.lesson4.review;
 
 // ⭐️
 // 문제 : https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
