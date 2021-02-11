@@ -2,6 +2,8 @@ package dami.codinginterview;
 
 import dami.codinginterview.list.ListNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class Interview {
@@ -19,6 +21,9 @@ public class Interview {
 		//new Stack2().isPair("())))");
 		//new Stack3().calculatePostfix("123+-5*");
 		//new Stack4().span(new int[] {5,3,2,6,7,1,4});
+
+		//new Queue1().reverseQueue(queue());
+		//new Queue2().lruCache();
 	}
 
 	private ListNode circleNode() {
@@ -36,5 +41,15 @@ public class Interview {
 		stack.push(2);
 		stack.push(3);
 		return stack;
+	}
+
+	private Queue<Integer> queue() {
+		Queue<Integer> queue = new LinkedList<>();
+		queue.offer(1);
+		queue.offer(2);
+		queue.offer(3);
+		queue.offer(4);
+		queue.offer(5);
+		return queue;
 	}
 }
