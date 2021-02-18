@@ -25,6 +25,8 @@ public class Interview {
 
 		//new Queue1().reverseQueue(queue());
 		//new Queue2().lruCache();
+		//new Queue3().levelSum(treeNode());
+		//new Queue4().implementStackByQueue();
 	}
 
 	private ListNode circleNode() {
