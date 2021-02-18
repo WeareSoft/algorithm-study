@@ -2,6 +2,10 @@ package hackerrank;
 
 import java.util.Comparator;
 
+/**
+ * Sorting: Comparator
+ * https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem
+ */
 public class SortComparator {
     static class Checker implements Comparator<Player> {
         public int compare(Player a, Player b) {
