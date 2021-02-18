@@ -1,4 +1,4 @@
-package dami.codinginterview.list;
+package dami.codinginterview.common;
 
 public class ListNode {
 	public int val;

@@ -1,6 +1,7 @@
 package dami.codinginterview;
 
-import dami.codinginterview.list.ListNode;
+import dami.codinginterview.common.ListNode;
+import dami.codinginterview.common.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -51,5 +52,10 @@ public class Interview {
 		queue.offer(4);
 		queue.offer(5);
 		return queue;
+	}
+
+	private TreeNode treeNode() {
+		TreeNode tree = new TreeNode(9, new TreeNode(2, new TreeNode(1), new TreeNode(5)), new TreeNode(3, null, new TreeNode(4)));
+		return tree;
 	}
 }
