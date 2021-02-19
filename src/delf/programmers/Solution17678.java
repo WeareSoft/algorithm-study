@@ -21,7 +21,9 @@ public class Solution17678 {
     public String solution(int n, int t, int m, String[] timetable) {
         Queue<LocalTime> queue = new PriorityQueue<>();
         for (String value : timetable) {
-            String s[] = value.split(":");
+            if (value.equals("24:00")) {
+                value = "23:59";
+            }
             queue.add(LocalTime.parse(value, DateTimeFormatter.ofPattern("HH:mm")));
         }
         LocalTime bus = LocalTime.parse("09:00", DateTimeFormatter.ofPattern("HH:mm"));
@@ -31,7 +33,7 @@ public class Solution17678 {
             int people = 0;
             for (int j = 0; j < m; j++) {
                 if (!queue.isEmpty()) {
-                    if (bus.compareTo(queue.peek()) >= 0) {
+                    if (bus.isAfter(queue.peek()) || bus.equals(queue.peek())) {
                         corn = queue.poll();
                         people++;
                     }
@@ -73,7 +75,7 @@ public class Solution17678 {
             nextBusTime = nextBusTime.plusMinutes(t);
         }
 
-		return lastBusTime.toString();
+        return lastBusTime.toString();
     }
 
 }
