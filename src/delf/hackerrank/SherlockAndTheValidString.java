@@ -11,8 +11,7 @@ import java.util.Map;
 public class SherlockAndTheValidString {
 
     public static void main(String[] args) throws IOException {
-        System.out.println(isValid("aaaaabc"));
-//        System.out.println(isValid(new String(Files.readAllBytes(Paths.get("src/delf/hackerrank/arg.txt")))));
+//        System.out.println(isValid("aaaaabc"));
 //        System.out.println(isValid("aabbccddeefghi"));
 //        System.out.println(isValid("abcdefghhgfedecba"));
     }
@@ -27,15 +26,21 @@ public class SherlockAndTheValidString {
             letterCounter.merge(ch, 1, Integer::sum);
         }
         if (letterCounter.size() < 2) {
+            // '문자'가 모두 같은 케이스 (remove 없이도 valid 함)
             return true;
         }
-        System.out.println(letterCounter);
         Map<Integer, Integer> frequencyCounter = new HashMap<>();
         for (int freq : letterCounter.values()) {
             frequencyCounter.merge(freq, 1, Integer::sum);
         }
-        System.out.println(frequencyCounter);
+
+        if (frequencyCounter.size() == 1) {
+            // '빈도수'가 모두 같은 케이스 (remove 없이도 valid 함)
+            return true;
+        }
+
         if (frequencyCounter.size() > 2) {
+            // '빈도수' 3 이상인 케이스. 즉, remove 한번으로 valid하게 만들기가 불가능
             return false;
         }
 
@@ -47,14 +52,21 @@ public class SherlockAndTheValidString {
                 preValue = frequencyCounter.get(key);
                 continue;
             }
-            int postValue = frequencyCounter.get(key);
-            if (postValue == 1 || preValue == 1) {
-                return true;
+            if (preKey == 1) { // 가장 적은 빈도수가 한번이고,
+                // 그런 경우가 하나인 경우 ('문자' 자체가 하나이고, 그걸 remove)
+                return preValue == 1;
             }
-            if (preKey - key == 1) {
-                return true;
-            }
+            // '빈도수'를 하나를 remove 함으로써 다른 빈도수와 같게하는 케이스
+            return key - preKey == 1; //
         }
-        return false;
+        throw new IllegalArgumentException();
     }
 }
+
+/*
+ * # case 1: {}, {a=3}
+ * # case 2: {a=2, b=2, c=2}
+ * # case 3: {a=1, b=2, c=3}
+ * # case 4: {a=1, b=3, c=3}(true), {a=1, b=1, c=3}(false)
+ * # case 5: {a=5, b=5, c=6}(true)
+ * */
