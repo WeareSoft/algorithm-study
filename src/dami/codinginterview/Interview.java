@@ -27,6 +27,9 @@ public class Interview {
 		//new Queue2().lruCache();
 		//new Queue3().levelSum(treeNode());
 		//new Queue4().implementStackByQueue();
+
+		//new Tree1().findNthNode(treeNode(), 5);
+		//new Tree1_1().findTreeDepth(treeNode());
 	}
 
 	private ListNode circleNode() {
