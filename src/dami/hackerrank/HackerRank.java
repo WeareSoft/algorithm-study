@@ -11,6 +11,8 @@ public class HackerRank {
 		//new Minimum_Swaps_2().minimumSwaps(new int[] {4,3,1,2});
 		//new Special_StringAgain().substrCount(5, "asasd");
 		//new Common_Child().commonChild("WEWOUCUIDGCGTRMEZEPXZFEJWISRSBBSYXAYDFEJJDLEBVHHKS", "FDAGCXGKCTKWNECHMRXZWMLRYUCOCZHJRRJBOAJOQJZZVUYXIC");
+		//new Sorting_Comparator().solution();
+		//new Fraudulent_Activity_Notifications().activityNotifications(new int[] {10,20,30,40,50}, 3);
 		//////////////////////////////////////////////////////////////////////////////
 	}
 }

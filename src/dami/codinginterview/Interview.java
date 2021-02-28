@@ -27,6 +27,11 @@ public class Interview {
 		//new Queue2().lruCache();
 		//new Queue3().levelSum(treeNode());
 		//new Queue4().implementStackByQueue();
+
+		//new Tree1().findNthNode(treeNode(), 5);
+		//new Tree1_1().findTreeDepth(treeNode());
+		//new Tree2().makeBinaryTree(new int[] {4,2,5,1,3}, new int[] {1,2,4,5,3});
+		//new Tree2().makeBinaryTree_최적화(new int[] {4,2,5,1,3}, new int[] {1,2,4,5,3});
 	}
 
 	private ListNode circleNode() {
