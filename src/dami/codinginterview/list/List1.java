@@ -1,5 +1,7 @@
 package dami.codinginterview.list;
 
+import dami.codinginterview.common.ListNode;
+
 public class List1 {
 	// 1 2 3 6 7
 	public ListNode reverseList(ListNode node) {

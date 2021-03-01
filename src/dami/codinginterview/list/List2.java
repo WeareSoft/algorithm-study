@@ -1,5 +1,7 @@
 package dami.codinginterview.list;
 
+import dami.codinginterview.common.ListNode;
+
 import java.util.HashMap;
 import java.util.Map;
 
