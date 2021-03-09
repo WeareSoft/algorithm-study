@@ -1,14 +1,14 @@
-package programmers.skillcheck;
+package programmers;
 
-public class SkillCheck0301 {
+public class Solution12952 {
     public static int[] arr;
     public static int count = 0;
 
     public static void main(String[] args) {
-        System.out.println(nQueen(8));
+        System.out.println(new Solution12952().solution(8));
     }
 
-    public static int nQueen(int n) {
+    public int solution(int n) {
         return dfs(new int[n * n], n, 0);
     }
 
