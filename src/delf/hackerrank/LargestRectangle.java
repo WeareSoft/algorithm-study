@@ -23,7 +23,7 @@ public class LargestRectangle {
         }
 
         while (!stack.empty()) {
-            top = h[stack.pop()] * (stack.empty() ? i : i - stack.peek() - 1);
+            top = h[stack.pop()] * (stack.empty() ? i : i - stack.peek() - 1);  
             maxArea = Math.max(maxArea, top);
         }
 
