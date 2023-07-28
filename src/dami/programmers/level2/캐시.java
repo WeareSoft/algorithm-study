@@ -1,8 +1,6 @@
 package dami.programmers.level2;
 
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
 
 // https://programmers.co.kr/learn/courses/30/lessons/17680
@@ -32,6 +30,7 @@ public class 캐시 {
 
 		return time;
 	}
+
 }
 
 /*  // 다른 풀이 1

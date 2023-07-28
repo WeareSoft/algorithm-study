@@ -1,5 +1,7 @@
 package dami.codility;
 
+import dami.codility.lesson5.review.GenomicRangeQuery;
+
 public class Codility {
 	public void solutions() {
 		//new BinaryGap().solution(328);
@@ -9,6 +11,6 @@ public class Codility {
 		//new MissingInteger().solution(new int[] {1,3,6,4,1,2});
 		//new CountDiv().solution(10, 10, 5);
 		//new CountDiv().solution(0, Integer.MAX_VALUE, 1);
-		//new GenomicRangeQuery().solution("CAGCCTA", new int[] {2, 5, 0}, new int[] {4, 5, 6});
+		new GenomicRangeQuery().solution("CAGCCTA", new int[] {2, 5, 0}, new int[] {4, 5, 6});
 	}
 }

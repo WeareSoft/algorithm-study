@@ -38,7 +38,7 @@ public class Kth_Smallest_Element_230 {
 
 /*  // 다른 방법
 	// 중위순회랑 동시에 k번째 값 확인 가능
-	// 이진탐색 트리는 중위순회 순서상 가장 먼저 조회하는 값이 가장 작은 값
+	// ⭐️⭐️ 이진탐색 트리는 중위순회 순서상 가장 먼저 조회하는 값이 가장 작은 값
 	// 조회 순서 == 노드 값 오름차순
 
 public class Kth_Smallest_Element_230 {

@@ -1,7 +1,22 @@
 package dami.programmers;
 
+import dami.programmers.level1.추억_점수;
+import dami.programmers.level2.요격_시스템;
+
+import java.util.Arrays;
+
 public class Programmers {
 	public void solutions() {
+		//////////////////////////////////////////////////////////////////////////////
+		/*                              level1                                      */
+		//new 정수_삼각형().solution(new int[][] {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}});
+//		int[] result = new 추억_점수().solution(new String[]{"may", "kein", "kain", "radi"},
+//				new int[]{5, 10, 1, 3},
+//				new String[][]{{"may", "kein", "kain", "radi"}, {"may", "kein", "brin", "deny"}, {"kon", "kain", "may", "coni"}});
+		int result = new 요격_시스템().solution(new int[][]{{0, 4}, {0, 1}, {2, 3}});
+		System.out.println(result);
+		//////////////////////////////////////////////////////////////////////////////
+
 		//////////////////////////////////////////////////////////////////////////////
 		/*                              level2                                      */
 		//new 멀쩡한_사각형().solution(100000000, 100000001);
