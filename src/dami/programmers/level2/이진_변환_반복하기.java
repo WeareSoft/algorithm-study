@@ -34,4 +34,25 @@ public class 이진_변환_반복하기 {
 		result.insert(0,  number);
 		return result.toString();
 	}
+
+
+	public static void main(String[] args) {
+		new 이진_변환_반복하기().solution_2023("111111");
+	}
+
+
+	public int[] solution_2023(String s) {
+		int numberOfConvert = 0;
+		int numberOfZero = 0;
+		while (!s.equals("1")) {
+			int originLength = s.length();
+			String removedS = s.replaceAll("0", "");
+			numberOfZero += originLength - removedS.length();
+
+			s = Integer.toBinaryString(removedS.length());
+			numberOfConvert++;
+		}
+
+		return new int[] {numberOfConvert, numberOfZero};
+	}
 }

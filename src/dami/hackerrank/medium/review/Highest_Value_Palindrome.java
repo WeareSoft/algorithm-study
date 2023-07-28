@@ -46,7 +46,7 @@ public class Highest_Value_Palindrome {
 
 		// 양쪽 같은 숫자 최댓값 9로 치환
 		for (int i = 0; i < n / 2 && k > 0; i++) {
-			if (k == 1) {
+			if (k == 1 && n % 2 != 0) {
 				chars[chars.length / 2] = MAX;
 				k--;
 			} else {
